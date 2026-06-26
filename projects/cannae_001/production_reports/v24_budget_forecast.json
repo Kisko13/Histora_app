@@ -1,0 +1,11 @@
+{
+  "policy": "V24 Free-First: only voice may use a paid/API provider. Images, music, orchestration, assembly and reports are local/free.",
+  "blocks": 3,
+  "characters": 448,
+  "voice_provider": "mock",
+  "estimated_voice_cost_usd": 0.0,
+  "estimated_image_cost_usd": 0.0,
+  "estimated_music_cost_usd": 0.0,
+  "estimated_orchestration_cost_usd": 0.0,
+  "estimated_total_cost_usd": 0.0
+}

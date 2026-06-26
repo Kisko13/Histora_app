@@ -1,0 +1,20 @@
+MOCK AUDIO — FREE
+
+PROJECT: The Flies Always Found Us First
+SCENE: The Tent
+BLOCK: B002
+CHARACTER: MARCUS
+VOICE_STATE: M2_WARM_MEMORY
+
+CHARACTER BASELINE:
+intimate, restrained, memory-heavy
+
+DELIVERY:
+Warmer and conversational. Subtle human humor. Restrained nostalgia.
+
+SCRIPT:
+The tent I shared had seven other men in it.
+
+There was Gaius. There was Titus. There was young Publius from Arretium.
+
+Paste or import the full production script here as blocks.

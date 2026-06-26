@@ -1,0 +1,202 @@
+{
+  "project_state": {
+    "total": 3,
+    "complete": 1,
+    "assembly_ready": 2,
+    "voice_done": 2,
+    "image_done": 3,
+    "music_done": 1,
+    "states": [
+      {
+        "block_id": "B001",
+        "scene": "Before Dawn — The Flies",
+        "character": "MARCUS",
+        "story_ok": true,
+        "voice_ok": true,
+        "image_ok": true,
+        "music_ok": true,
+        "assembly_ready": true,
+        "complete": true,
+        "status": "complete",
+        "status_label": "COMPLETE",
+        "next_task": "done",
+        "missing": [],
+        "icon": "🟢",
+        "voice_path": "assets/audio_final/B001.txt",
+        "image_path": "assets/images/B001/approved.png",
+        "music_path": "assets/music/B001/approved.mp3"
+      },
+      {
+        "block_id": "B002",
+        "scene": "The Tent",
+        "character": "MARCUS",
+        "story_ok": true,
+        "voice_ok": true,
+        "image_ok": true,
+        "music_ok": false,
+        "assembly_ready": true,
+        "complete": false,
+        "status": "missing_music",
+        "status_label": "MISSING MUSIC",
+        "next_task": "import/approve music",
+        "missing": [
+          "music"
+        ],
+        "icon": "🔵",
+        "voice_path": "assets/audio_final/B002.txt",
+        "image_path": "assets/images/B002/approved.png",
+        "music_path": ""
+      },
+      {
+        "block_id": "B003",
+        "scene": "Example Dialogue",
+        "character": "TITUS",
+        "story_ok": true,
+        "voice_ok": false,
+        "image_ok": true,
+        "music_ok": false,
+        "assembly_ready": false,
+        "complete": false,
+        "status": "missing_voice",
+        "status_label": "MISSING VOICE",
+        "next_task": "generate/approve voice",
+        "missing": [
+          "voice",
+          "music"
+        ],
+        "icon": "🟠",
+        "voice_path": "",
+        "image_path": "assets/images/B003/approved.png",
+        "music_path": ""
+      }
+    ],
+    "next": {
+      "block_id": "B002",
+      "scene": "The Tent",
+      "character": "MARCUS",
+      "story_ok": true,
+      "voice_ok": true,
+      "image_ok": true,
+      "music_ok": false,
+      "assembly_ready": true,
+      "complete": false,
+      "status": "missing_music",
+      "status_label": "MISSING MUSIC",
+      "next_task": "import/approve music",
+      "missing": [
+        "music"
+      ],
+      "icon": "🔵",
+      "voice_path": "assets/audio_final/B002.txt",
+      "image_path": "assets/images/B002/approved.png",
+      "music_path": ""
+    }
+  },
+  "blocks": [
+    {
+      "block_id": "B001",
+      "scene": "Before Dawn — The Flies",
+      "state": {
+        "block_id": "B001",
+        "scene": "Before Dawn — The Flies",
+        "character": "MARCUS",
+        "story_ok": true,
+        "voice_ok": true,
+        "image_ok": true,
+        "music_ok": true,
+        "assembly_ready": true,
+        "complete": true,
+        "status": "complete",
+        "status_label": "COMPLETE",
+        "next_task": "done",
+        "missing": [],
+        "icon": "🟢",
+        "voice_path": "assets/audio_final/B001.txt",
+        "image_path": "assets/images/B001/approved.png",
+        "music_path": "assets/music/B001/approved.mp3"
+      },
+      "warnings": [],
+      "recommendations": [
+        "Create a music/SFX cue so assembly has direction without paid generation.",
+        "Block is complete; ready for assembly."
+      ]
+    },
+    {
+      "block_id": "B002",
+      "scene": "The Tent",
+      "state": {
+        "block_id": "B002",
+        "scene": "The Tent",
+        "character": "MARCUS",
+        "story_ok": true,
+        "voice_ok": true,
+        "image_ok": true,
+        "music_ok": false,
+        "assembly_ready": true,
+        "complete": false,
+        "status": "missing_music",
+        "status_label": "MISSING MUSIC",
+        "next_task": "import/approve music",
+        "missing": [
+          "music"
+        ],
+        "icon": "🔵",
+        "voice_path": "assets/audio_final/B002.txt",
+        "image_path": "assets/images/B002/approved.png",
+        "music_path": ""
+      },
+      "warnings": [],
+      "recommendations": [
+        "Create a music/SFX cue so assembly has direction without paid generation.",
+        "Approve local music/SFX cue or silent placeholder next."
+      ]
+    },
+    {
+      "block_id": "B003",
+      "scene": "Example Dialogue",
+      "state": {
+        "block_id": "B003",
+        "scene": "Example Dialogue",
+        "character": "TITUS",
+        "story_ok": true,
+        "voice_ok": false,
+        "image_ok": true,
+        "music_ok": false,
+        "assembly_ready": false,
+        "complete": false,
+        "status": "missing_voice",
+        "status_label": "MISSING VOICE",
+        "next_task": "generate/approve voice",
+        "missing": [
+          "voice",
+          "music"
+        ],
+        "icon": "🟠",
+        "voice_path": "",
+        "image_path": "assets/images/B003/approved.png",
+        "music_path": ""
+      },
+      "warnings": [
+        "Script block is very short; narration may feel abrupt."
+      ],
+      "recommendations": [
+        "Create a music/SFX cue so assembly has direction without paid generation.",
+        "Generate/approve voice first because it controls final timing."
+      ]
+    }
+  ],
+  "next_actions": [
+    {
+      "block_id": "B001",
+      "action": "Create a music/SFX cue so assembly has direction without paid generation."
+    },
+    {
+      "block_id": "B002",
+      "action": "Create a music/SFX cue so assembly has direction without paid generation."
+    },
+    {
+      "block_id": "B003",
+      "action": "Create a music/SFX cue so assembly has direction without paid generation."
+    }
+  ]
+}

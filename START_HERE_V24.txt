@@ -1,0 +1,18 @@
+START HERE - Historical POV Studio V24
+
+Run:
+  run_studio_v24.bat
+
+What changed in this fixed package:
+- The launcher now creates a local .venv automatically.
+- It installs missing required packages automatically, including PySide6.
+- The previous error "No module named PySide6" happens when the app is started with a Python install that does not have PySide6 installed.
+- This fix does NOT spend money. It only installs free Python libraries.
+
+Money rule for this V24:
+- Voice generation is the only step intended to use paid/API services.
+- Image and music stages use local/free placeholder outputs and prompt files.
+- Assembly/orchestration/recovery/budget/director reports are local.
+
+First run can take a few minutes because PySide6 is a large free package.
+After that it should open normally.

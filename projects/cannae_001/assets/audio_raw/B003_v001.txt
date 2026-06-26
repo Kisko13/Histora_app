@@ -1,0 +1,16 @@
+MOCK AUDIO — FREE
+
+PROJECT: The Flies Always Found Us First
+SCENE: Example Dialogue
+BLOCK: B003
+CHARACTER: TITUS
+VOICE_STATE: T1_DRY_VETERAN
+
+CHARACTER BASELINE:
+dry, tired, factual
+
+DELIVERY:
+Dry, low, factual. Every word weighed. No drama.
+
+SCRIPT:
+"Wet."

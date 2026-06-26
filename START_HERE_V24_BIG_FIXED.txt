@@ -1,0 +1,19 @@
+HISTORICAL POV STUDIO V24 BIG LOCAL AI - FIXED NAVIGATION
+
+Use: run_studio_v24.bat
+
+The Local AI splitter is now visible in TWO places:
+
+1) Top toolbar button:
+   Paste Script / Local AI Split
+
+2) Workspace tabs:
+   Control -> V24 Orchestrator -> Paste Full Script -> Local AI Split
+
+Cost policy:
+- Script splitting: local/free through Ollama Qwen if running
+- Fallback splitter: local/free if Ollama is not running
+- Images/music/assembly: local/free placeholders/import/ffmpeg pipeline
+- Only voice generation may use paid/API provider
+
+First click Open if no project is loaded, then click Paste Script / Local AI Split.

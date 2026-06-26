@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+.venv/
+*/.venv/
+__pycache__/
+*/__pycache__/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# VSCode
+.vscode/
+
+# JetBrains
+.idea/
+
+# Build
+build/
+dist/
+
+# Python packaging
+*.egg-info/
+
+# Logs
+*.log
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Environment variables
+.env
+
+# Generated media
+exports/
+renders/
+temp/
+cache/
+
+# Audio cache
+voice_cache/
+music_cache/
+
+# Images
+image_cache/
+
+# Ollama cache
+ollama_cache/
+
+# FFmpeg temp
+ffmpeg_temp/
+
+# Compiled Qt
+*.qm
+
+# SQLite temp
+*.db-journal

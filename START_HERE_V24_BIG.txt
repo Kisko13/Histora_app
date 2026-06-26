@@ -1,0 +1,18 @@
+Historical POV Studio - V24 Big Local AI Build
+
+Run:
+  run_studio_v24.bat
+
+New big feature:
+  V24 Orchestrator -> Paste Full Script -> Local AI Split
+
+Cost rule:
+  Only voice generation may spend money.
+  Script splitting, image prompts, music cues, director reports, asset library and assembly are local/free.
+
+If Ollama/Qwen is not installed:
+  The app still works using deterministic free splitting.
+
+Recommended local AI:
+  ollama pull qwen2.5:7b
+  ollama run qwen2.5:7b
