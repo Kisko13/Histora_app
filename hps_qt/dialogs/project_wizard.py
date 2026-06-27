@@ -15,8 +15,8 @@ from PySide6.QtWidgets import (
 )
 
 from hps.core.script_importer import ScriptImporter
-from hps.core.v25_production_analyzer import build_production_plan, plan_metrics, plan_to_legacy_importer_shape
-from hps.core.v25_analyzer import plan_metrics
+from hps.core.analysis.models import AnalysisContext
+from hps.core.analysis.analyzer import GenericScriptAnalyzer, plan_metrics, plan_to_legacy_importer_shape
 
 
 def _read_docx(path: Path) -> str:
@@ -59,11 +59,13 @@ def _words(text: str) -> int:
 
 def _plan_stats(plan: dict) -> dict:
     stats = plan_metrics(plan)
-    stats.setdefault("voice_cost", stats.get("voice_cost_estimate", 0.0))
+    stats.setdefault("voice_cost", 0.0)
     stats.setdefault("images", 0)
     stats.setdefault("music_cues", 0)
     stats.setdefault("locations", 0)
     stats.setdefault("equipment", 0)
+    stats.setdefault("sfx", 0)
+    stats.setdefault("ambience", 0)
     return stats
 
 
@@ -198,24 +200,23 @@ class ProjectWizardDialog(QDialog):
         title = self.project_title.text().strip() or "Historical POV Project"
 
         self.summary.setPlainText(
-            "Analyzing script locally...\n\n"
-            "Detecting scenes, characters, narration blocks, image cues, music cues, ambience, SFX and runtime."
+            "Analyzing script with final generic analyzer...\n\n"
+            "This analyzer is story-agnostic and does not contain Cannae-specific rules."
         )
         self.generate_btn.setEnabled(False)
 
         try:
-            plan = build_production_plan(script, title)
+            context = AnalysisContext(
+                project_title=title,
+                historical_period=self.period.text().strip(),
+                voice_style=self.voice_style.text().strip(),
+                target_runtime_minutes=int(self.target_runtime.text().strip() or "75"),
+            )
+            analyzer = GenericScriptAnalyzer()
+            plan = analyzer.analyze(script, context)
         except Exception as exc:
             QMessageBox.warning(self, "Analysis failed", str(exc))
             return
-
-        plan.setdefault("production_meta", {})
-        plan["production_meta"].update({
-            "historical_period": self.period.text().strip(),
-            "target_runtime_minutes": self.target_runtime.text().strip(),
-            "voice_style": self.voice_style.text().strip(),
-            "cost_policy": "Only voice generation may use paid/API providers. Script analysis is local/free.",
-        })
 
         self.plan = plan
         self.populate_preview(plan)
@@ -242,7 +243,7 @@ class ProjectWizardDialog(QDialog):
             f"Images/music/analysis cost: $0.00\n\n"
             f"Next step:\n"
             f"Press Generate Project only if this analysis looks acceptable.\n\n"
-            f"Ollama note:\n{ollama_error if ollama_error else 'No error.'}"
+            f"Validation:\n{plan.get('validation', {}).get('errors', ['OK'])}"
         )
 
         scenes = plan.get("scenes") or []
