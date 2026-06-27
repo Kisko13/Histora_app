@@ -107,6 +107,10 @@ class ProjectWizardDialog(QDialog):
         self.period = QLineEdit("Roman Republic")
         self.target_runtime = QLineEdit("75")
         self.voice_style = QLineEdit("Deep restrained male narrator, slow immersive delivery")
+        self.main_pov_character = QLineEdit("")
+        self.known_characters = QLineEdit("")
+        self.known_locations = QLineEdit("")
+        self.known_equipment = QLineEdit("")
 
         self.ollama_model = QLineEdit("qwen2.5:7b")
         self.ollama_host = QLineEdit("http://127.0.0.1:11434")
@@ -117,6 +121,10 @@ class ProjectWizardDialog(QDialog):
         form.addRow("Historical period", self.period)
         form.addRow("Target runtime minutes", self.target_runtime)
         form.addRow("Voice style", self.voice_style)
+        form.addRow("Main POV character (optional)", self.main_pov_character)
+        form.addRow("Known characters, comma-separated (optional)", self.known_characters)
+        form.addRow("Known locations, comma-separated (optional)", self.known_locations)
+        form.addRow("Known equipment, comma-separated (optional)", self.known_equipment)
         form.addRow("Ollama model", self.ollama_model)
         form.addRow("Ollama host", self.ollama_host)
         form.addRow("Local AI", self.use_ollama)
@@ -209,8 +217,12 @@ class ProjectWizardDialog(QDialog):
             context = AnalysisContext(
                 project_title=title,
                 historical_period=self.period.text().strip(),
+                main_pov_character=self.main_pov_character.text().strip(),
                 voice_style=self.voice_style.text().strip(),
                 target_runtime_minutes=int(self.target_runtime.text().strip() or "75"),
+                known_characters=[x.strip() for x in self.known_characters.text().split(",") if x.strip()],
+                known_locations=[x.strip() for x in self.known_locations.text().split(",") if x.strip()],
+                known_equipment=[x.strip() for x in self.known_equipment.text().split(",") if x.strip()],
             )
             analyzer = GenericScriptAnalyzer()
             plan = analyzer.analyze(script, context)

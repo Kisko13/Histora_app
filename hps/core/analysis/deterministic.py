@@ -13,7 +13,12 @@ from .preprocessor import split_paragraphs, word_count, first_clean_sentence
 STOP_NAMES = {
     "The", "And", "But", "Then", "There", "This", "That", "Long", "Before",
     "After", "When", "Where", "What", "Why", "How", "Part", "Chapter",
-    "Scene", "Production", "Script", "First", "Second", "Third"
+    "Scene", "Production", "Script", "First", "Second", "Third",
+    "Morning", "Evening", "Night", "Dawn", "Afternoon",
+    "Roman", "Republic", "Battle", "War", "City", "Village",
+    "Perfect", "Exactly", "Probably", "Really", "Good",
+    "Everyone", "Someone", "Nobody", "Nothing", "Everything",
+    "A", "An", "Of", "To", "In", "On", "For", "With"
 }
 
 LOCATION_WORDS = {
@@ -37,22 +42,64 @@ SFX_WORDS = {
 
 
 def detect_names(script: str, context: AnalysisContext) -> list[str]:
-    names = set(context.known_characters or [])
-    if context.main_pov_character:
-        names.add(context.main_pov_character)
+    """
+    Generic character discovery.
 
-    candidates = re.findall(r"\b[A-Z][a-z]{2,}\b", script)
-    counts = Counter(c for c in candidates if c not in STOP_NAMES)
+    Rules:
+    - user-provided known characters always win
+    - main POV character always wins
+    - capitalized repeated names are candidates
+    - headings/common title words are ignored
+    - location/equipment words are ignored
+    - one-off capitalized words are usually not characters
+    - dialogue-heavy unnamed scripts fall back to Speaker A / Speaker B
+    """
+    names = set()
+
+    for n in context.known_characters or []:
+        n = (n or "").strip()
+        if n:
+            names.add(n)
+
+    if context.main_pov_character:
+        names.add(context.main_pov_character.strip())
+
+    # Strip headings to reduce false positives.
+    body_lines = []
+    for line in script.splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if stripped.startswith("#"):
+            continue
+        if len(stripped.split()) <= 5 and stripped.isupper():
+            continue
+        body_lines.append(stripped)
+
+    body = "\n".join(body_lines)
+
+    candidates = re.findall(r"\b[A-Z][a-z]{2,}\b", body)
+    counts = Counter(candidates)
+
+    bad = set(STOP_NAMES)
+    bad.update(w.title() for w in LOCATION_WORDS)
+    bad.update(w.title() for w in EQUIPMENT_WORDS)
 
     for name, count in counts.items():
+        if name in bad:
+            continue
         if count >= 2:
             names.add(name)
+
+    # Dialogue-heavy script with no named people.
+    quote_lines = [l for l in script.splitlines() if l.strip().startswith('"')]
+    if not names and len(quote_lines) >= 6:
+        names.update(["Speaker A", "Speaker B"])
 
     if not names:
         names.add("Narrator")
 
     return sorted(names)
-
 
 def detect_terms(text: str, base: set[str], known: list[str]) -> list[str]:
     low = text.lower()
@@ -113,32 +160,86 @@ def music_cue(emotion: str, sfx: list[str]) -> str:
 
 
 def split_into_scene_chunks(paragraphs: list[str]) -> list[list[str]]:
+    """
+    Final-ready generic scene splitter.
+
+    Does NOT create scenes from every heading or divider.
+    Targets practical production scenes around 2-4 minutes.
+    Tiny fragments are merged into neighboring scenes.
+    """
     scenes = []
     current = []
     current_words = 0
 
-    for p in paragraphs:
+    def is_structural_heading(p: str) -> bool:
+        low = p.lower().strip()
         wc = word_count(p)
-        is_heading = wc <= 12 and not p.endswith(".")
-        hard_transition = any(x in p.lower() for x in [
-            "part one", "part two", "part three", "chapter", "afterward",
-            "the next morning", "that night", "years later"
+
+        if wc <= 2:
+            return True
+
+        if low.startswith(("part ", "chapter ", "act ")):
+            return True
+
+        if low in {"prologue", "epilogue", "afterward", "aftermath"}:
+            return True
+
+        return False
+
+    def is_transition(p: str) -> bool:
+        low = p.lower()
+        return any(x in low for x in [
+            "the next morning",
+            "that night",
+            "years later",
+            "after the battle",
+            "before dawn",
+            "at dusk",
+            "by evening",
+            "the following day",
         ])
 
-        if current and (current_words > 650 or hard_transition or is_heading):
+    pending_heading = None
+
+    for p in paragraphs:
+        wc = word_count(p)
+
+        if is_structural_heading(p):
+            pending_heading = p
+            continue
+
+        hard_break = is_transition(p)
+        soft_break = current_words >= 430 and wc >= 35
+        max_break = current_words >= 700
+
+        if current and (hard_break or soft_break or max_break):
             scenes.append(current)
             current = []
             current_words = 0
 
-        if not is_heading:
-            current.append(p)
-            current_words += wc
+        if pending_heading and not current:
+            # Keep heading as metadata-like first paragraph only if useful, not as its own scene.
+            if word_count(pending_heading) > 2:
+                current.append(pending_heading)
+                current_words += word_count(pending_heading)
+            pending_heading = None
+
+        current.append(p)
+        current_words += wc
 
     if current:
         scenes.append(current)
 
-    return scenes
+    # Merge very short scenes into neighbors.
+    merged = []
+    for sc in scenes:
+        sc_words = sum(word_count(x) for x in sc)
+        if merged and sc_words < 120:
+            merged[-1].extend(sc)
+        else:
+            merged.append(sc)
 
+    return merged
 
 def split_blocks(scene_text: str, target_words: int = 130) -> list[str]:
     sentences = re.split(r"(?<=[.!?])\s+", scene_text.strip())
@@ -177,7 +278,13 @@ def analyze_deterministic(script: str, context: AnalysisContext) -> dict:
         for block_text in split_blocks(scene_text):
             block_id = f"B{block_number:04d}"
             mentioned = [n for n in names if re.search(rf"\b{re.escape(n)}\b", block_text)]
-            character = mentioned[0] if mentioned else pov
+
+            if "Speaker A" in names and "Speaker B" in names and block_text.strip().startswith('"'):
+                # Alternating dialogue fallback for unnamed dialogue-heavy scripts.
+                character = "Speaker A" if block_number % 2 else "Speaker B"
+                mentioned = [character]
+            else:
+                character = mentioned[0] if mentioned else pov
             for m in mentioned or [character]:
                 if scene_id not in character_scene_map[m]:
                     character_scene_map[m].append(scene_id)
