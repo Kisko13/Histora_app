@@ -3,6 +3,7 @@ from __future__ import annotations
 import json, re
 from pathlib import Path
 from hps.local_ai.script_splitter import qwen_plan, deterministic_plan
+from hps.core.v25_analyzer import build_v25_plan, enrich_plan
 from hps.core.asset_library import save_style_bible, register_assets_from_plan, inject_style
 
 SAFE = re.compile(r"[^a-zA-Z0-9_\-]+")

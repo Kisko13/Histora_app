@@ -33,6 +33,7 @@ from hps.controllers.production_controller import ProductionController
 from hps_qt.dialogs.production_dialog import ProductionDialog
 from hps_qt.widgets.qwen_voice_lab import QwenVoiceLab
 from hps_qt.widgets.v24_orchestrator_panel import V24OrchestratorPanel
+from hps_qt.dialogs.project_wizard import ProjectWizardDialog
 
 ROOT=Path(__file__).resolve().parent
 STYLE="""QMainWindow,QWidget{background:#1e1e1e;color:#e8e8e8;font-family:Segoe UI;font-size:10pt} QLabel{color:#e8e8e8} QPushButton{background:#3a3a3a;color:#e8e8e8;border:1px solid #555;padding:7px} QPushButton:hover{background:#4a4a4a} QComboBox,QLineEdit,QTextEdit,QListWidget{background:#151515;color:#e8e8e8;border:1px solid #444} QTreeWidget,QTableWidget{background:#151515;color:#e8e8e8;border:1px solid #444} QTabBar::tab{background:#2d2d30;color:#ddd;padding:8px 12px} QTabBar::tab:selected{background:#3a3a3a} QProgressBar{background:#151515;border:1px solid #444;text-align:center} QProgressBar::chunk{background:#4cc2ff} #StatCard,#InfoBadge,#Section{background:#252526;border:1px solid #333;border-radius:4px} #CardTitle,#BadgeTitle{color:#a0a0a0;font-size:9pt;font-weight:bold} #CardValue{color:#fff;font-size:24pt;font-weight:bold} #BadgeValue{color:#fff;font-size:13pt;font-weight:bold} #WorkspaceTitle{font-size:18pt;font-weight:bold} #PanelTitle{font-size:16pt;font-weight:bold} #AudioPlaceholder{background:#101010;border:1px solid #444;padding:18px;color:#a0a0a0} #Overview{color:#ddd;padding:6px} #SectionTitle{font-weight:bold;color:#4cc2ff}"""
@@ -55,7 +56,7 @@ class StudioQt(QMainWindow):
 
     def build_ui(self):
         tb=QToolBar("Main"); self.addToolBar(tb)
-        for text,fn in [("Open",self.open_project_dialog),("Paste Script / Local AI Split",self.open_local_ai_split),("V24 Orchestrator",self.focus_v24_orchestrator),("Generate Voice",self.open_generate_voice_dialog),("Build",self.build_episode),("Next Task",self.open_next_production_task),("Estimate Cost",self.estimate_cost),("Export",self.export_capcut)]:
+        for text,fn in [("Open",self.open_project_dialog),("New Project Wizard",self.open_project_wizard),("Paste Script / Local AI Split",self.open_local_ai_split),("V24 Orchestrator",self.focus_v24_orchestrator),("Generate Voice",self.open_generate_voice_dialog),("Build",self.build_episode),("Next Task",self.open_next_production_task),("Estimate Cost",self.estimate_cost),("Export",self.export_capcut)]:
             b=QPushButton(text); b.clicked.connect(fn); tb.addWidget(b)
         tb.addSeparator(); tb.addWidget(QLabel(" Provider ")); tb.addWidget(self.provider_box); tb.addWidget(QLabel(" Mode ")); tb.addWidget(self.mode_box)
 
@@ -133,13 +134,49 @@ class StudioQt(QMainWindow):
         if hasattr(self, "v24_orchestrator") and hasattr(self.v24_orchestrator, "import_script"):
             self.v24_orchestrator.import_script()
 
+   
+
+    def open_project_wizard(self):
+        if not self.db:
+            path, _ = QFileDialog.getSaveFileName(
+                self,
+                "Create New Historical POV Project",
+                str(ROOT / "projects" / "new_project.hps"),
+                "Historical POV Project (*.hps)"
+            )
+            if not path:
+                return
+            self.open_project(Path(path))
+
+        dlg = ProjectWizardDialog(self.db, self)
+        if dlg.exec() and getattr(dlg, "generated", False):
+            self.project_label.setText(str(self.db.path))
+            p = self.db.project()
+            self.title_label.setText(p["title"] if p else "Historical POV Studio")
+            self.refresh_all()
+            self.auto_select_first_block()
+
     def open_project_dialog(self):
-        path,_=QFileDialog.getOpenFileName(self,"Open Project",str(ROOT/"projects"),"Historical POV Project (*.hps)")
-        if path: self.open_project(Path(path))
-    def open_project(self,path):
-        self.db=self.service.open(path); self.state.set_project(self.db); self.project_label.setText(str(path)); p=self.db.project(); self.title_label.setText(p["title"] if p else "Historical POV Studio"); self.refresh_all(); self.auto_select_first_block()
+        path, _ = QFileDialog.getOpenFileName(
+            self,
+            "Open Project",
+            str(ROOT / "projects"),
+            "Historical POV Project (*.hps)"
+        )
+        if path:
+            self.open_project(Path(path))
+
+    def open_project(self, path):
+        self.db = self.service.open(path)
+        self.state.set_project(self.db)
+        self.project_label.setText(str(path))
+        p = self.db.project()
+        self.title_label.setText(p["title"] if p else "Historical POV Studio")
+        self.refresh_all()
+        self.auto_select_first_block()
+
     def current_cost_info(self):
-        return cost_guard(self.db,self.mode_box.currentText(),self.provider_box.currentText()) if self.db else None
+        return cost_guard(self.db, self.mode_box.currentText(), self.provider_box.currentText()) if self.db else None
 
     def auto_select_first_block(self):
         if not self.db:
