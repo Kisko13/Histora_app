@@ -292,6 +292,74 @@ def split_blocks(scene_text: str, target_words: int = 130) -> list[str]:
     return [b for b in blocks if b]
 
 
+
+def production_scene_title(scene_text: str, scene_index: int) -> str:
+    low = scene_text.lower()
+
+    if "before dawn" in low or "dawn" in low:
+        return "Before Dawn"
+    if "tent" in low:
+        return "Inside the Tent"
+    if "camp" in low and "fire" in low:
+        return "Campfire"
+    if "river" in low or "aufidus" in low:
+        return "Near the River"
+    if "battle" in low or "shield" in low or "blood" in low:
+        return "Battlefield"
+    if "after the battle" in low or "dead" in low:
+        return "Aftermath"
+    if "canusium" in low or "city" in low:
+        return "Refuge"
+
+    first = first_clean_sentence(scene_text, 42)
+    first = first.replace("THE FLIES ALWAYS FOUND US FIRST", "").strip()
+    first = first.replace("Production Script", "").strip()
+    return first or f"Scene {scene_index:03d}"
+
+
+def production_block_title(text: str, block_id: str) -> str:
+    t = first_clean_sentence(text, 44)
+    t = t.replace("THE FLIES ALWAYS FOUND US FIRST", "").strip()
+    t = t.replace("The Battle of Cannae — A First Person Narration", "").strip()
+    t = t.replace("Production Script — 60–70 minutes", "").strip()
+    t = t.strip(" -*#")
+    return t or block_id
+
+
+def character_baseline(name: str, role: str, context: AnalysisContext) -> str:
+    if role == "POV narrator":
+        return (
+            f"{name} is the primary listener/POV character. "
+            f"Voice should follow: {context.voice_style or 'restrained immersive narration'}."
+        )
+    return f"{name} is a supporting character detected from the script. Keep voice and visual traits consistent."
+
+
+def voice_profile_for(character: str, emotion: str, context: AnalysisContext) -> dict:
+    return {
+        "speaker": character,
+        "emotion": emotion,
+        "pace": "tense controlled" if emotion == "battle tension" else "slow immersive",
+        "pause_after": 0.7,
+        "delivery": context.voice_style or "restrained first-person narration",
+        "paid_allowed": True,
+    }
+
+
+def production_notes_for(block_text: str, character: str, locations: list[str], equipment: list[str]) -> dict:
+    return {
+        "assembly_role": "narration_block",
+        "image_required": True,
+        "voice_required": True,
+        "music_required": True,
+        "local_image_only": True,
+        "local_music_only": True,
+        "character_continuity": character,
+        "location_continuity": locations,
+        "equipment_continuity": equipment,
+    }
+
+
 def analyze_deterministic(script: str, context: AnalysisContext) -> dict:
     paragraphs = split_paragraphs(script)
     names = detect_names(script, context)
@@ -312,8 +380,14 @@ def analyze_deterministic(script: str, context: AnalysisContext) -> dict:
             block_id = f"B{block_number:04d}"
             mentioned = [n for n in names if re.search(rf"\b{re.escape(n)}\b", block_text)]
 
+            # Never allow common words to become character labels.
+            bad_character_labels = {
+                "Because", "Not", "Tell", "They", "Their", "There", "This", "That",
+                "Just", "Only", "Then", "When", "Where", "What", "Morning", "Evening"
+            }
+            mentioned = [m for m in mentioned if m not in bad_character_labels]
+
             if "Speaker A" in names and "Speaker B" in names and block_text.strip().startswith('"'):
-                # Alternating dialogue fallback for unnamed dialogue-heavy scripts.
                 character = "Speaker A" if block_number % 2 else "Speaker B"
                 mentioned = [character]
             else:
@@ -328,30 +402,32 @@ def analyze_deterministic(script: str, context: AnalysisContext) -> dict:
             emotion = detect_emotion(block_text)
             duration = estimate_duration(block_text)
 
-            blocks.append(ProductionBlock(
+            block = ProductionBlock(
                 id=block_id,
                 scene_id=scene_id,
                 text=block_text,
                 character=character,
                 duration_seconds=duration,
-                voice={
-                    "emotion": emotion,
-                    "pace": "slow immersive" if emotion != "battle tension" else "tense controlled",
-                    "pause_after": 0.7,
-                    "delivery": context.voice_style or "restrained first-person narration",
-                },
+                voice=voice_profile_for(character, emotion, context),
                 image_prompt=image_prompt(block_text, context, locations, equipment, character, emotion),
                 music_cue=music_cue(emotion, sfx),
                 locations=locations,
                 equipment=equipment,
                 sfx=sfx,
                 ambience=locations or ["subtle historical room tone"],
-            ))
+            )
+
+            block_dict = block.__dict__.copy()
+            block_dict["title"] = production_block_title(block_text, block_id)
+            block_dict["scene_label"] = block_dict["title"]
+            block_dict["production_notes"] = production_notes_for(block_text, character, locations, equipment)
+
+            blocks.append(block)
             block_number += 1
 
         scenes.append(ProductionScene(
             id=scene_id,
-            title=first_clean_sentence(scene_text, 54),
+            title=production_scene_title(scene_text, scene_index),
             summary=first_clean_sentence(scene_text, 240),
             blocks=blocks,
             locations=sorted(set(x for b in blocks for x in b.locations)),
@@ -390,6 +466,28 @@ def analyze_deterministic(script: str, context: AnalysisContext) -> dict:
             "music": "local/imported only",
         },
     ).to_dict()
+
+    for s in plan["scenes"]:
+        for b in s["blocks"]:
+            b["title"] = production_block_title(b.get("text", ""), b.get("id", "Block"))
+            b["scene_label"] = b["title"]
+            b["production_notes"] = production_notes_for(
+                b.get("text", ""),
+                b.get("character", pov),
+                b.get("locations", []),
+                b.get("equipment", []),
+            )
+
+    plan["character_library"] = {
+        c["id"]: {
+            "name": c["name"],
+            "role": c["role"],
+            "baseline": c["baseline"],
+            "voice_style": context.voice_style or "restrained immersive narration",
+            "image_continuity": "Keep face, age, clothing, and historical equipment consistent.",
+        }
+        for c in plan["characters"]
+    }
 
     plan["estimated_runtime_seconds"] = sum(b["duration_seconds"] for s in plan["scenes"] for b in s["blocks"])
     plan["estimated_voice_cost"] = total_chars * 0.000015

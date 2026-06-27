@@ -2,15 +2,6 @@
   "id": "JUST",
   "name": "Just",
   "role": "supporting character",
-  "baseline": "Detected automatically. Appears in 8 scene(s).",
-  "appears_in_scenes": [
-    "S004",
-    "S006",
-    "S008",
-    "S009",
-    "S012",
-    "S014",
-    "S015",
-    "S018"
-  ]
+  "baseline": "Detected automatically. Appears in 0 scene(s).",
+  "appears_in_scenes": []
 }

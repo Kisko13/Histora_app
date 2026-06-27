@@ -1,0 +1,18 @@
+MOCK AUDIO — FREE
+
+PROJECT: Cannae Production Script(1)
+SCENE: Before Dawn
+BLOCK: b0002
+CHARACTER: hannibal
+VOICE_STATE: narrator_slow
+
+CHARACTER BASELINE:
+Detected automatically. Appears in 3 scene(s).
+
+DELIVERY:
+Slow immersive historical POV narration; restrained, tired, human.
+
+SCRIPT:
+PART ONE: BEFORE THE SCREAMING
+
+The flies always found us before dawn. Long before Hannibal. Long before the screaming. Long before Rome lost more sons than anyone believed possible in a single afternoon on a flat and unremarkable plain in the south of Italy. The flies always found us first. They came in from the river in the dark hours, before the watch fires had burned low, before the first pale color had appeared above the eastern hills. You would be asleep — or something close to asleep, the half-conscious drift that passes for sleep when you are lying on hard ground in a leather tent with seven other men — and you would feel it. The first one on your lip. The second on your eyelid.

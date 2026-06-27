@@ -1,0 +1,7 @@
+{
+  "id": "HE_SAYS",
+  "name": "He says",
+  "role": "dialogue speaker",
+  "baseline": "Detected from speaker tag.",
+  "appears_in_scenes": []
+}

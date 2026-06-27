@@ -2,12 +2,6 @@
   "id": "THEY",
   "name": "They",
   "role": "supporting character",
-  "baseline": "Detected automatically. Appears in 5 scene(s).",
-  "appears_in_scenes": [
-    "S002",
-    "S006",
-    "S010",
-    "S012",
-    "S018"
-  ]
+  "baseline": "Detected automatically. Appears in 0 scene(s).",
+  "appears_in_scenes": []
 }

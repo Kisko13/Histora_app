@@ -1,17 +1,14 @@
 {
   "id": "PUBLIUS",
   "name": "Publius",
-  "role": "supporting character",
-  "baseline": "Detected automatically. Appears in 9 scene(s).",
+  "role": "script speaker",
+  "baseline": "Detected from [Speaker] production tag. Tag is metadata and is not sent to voice generation.",
   "appears_in_scenes": [
-    "S002",
-    "S006",
+    "S005",
     "S007",
-    "S008",
-    "S009",
     "S014",
     "S015",
-    "S016",
-    "S017"
+    "S019",
+    "S020"
   ]
 }

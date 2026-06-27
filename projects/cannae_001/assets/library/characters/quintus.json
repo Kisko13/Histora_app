@@ -1,14 +1,10 @@
 {
   "id": "QUINTUS",
   "name": "Quintus",
-  "role": "supporting character",
-  "baseline": "Detected automatically. Appears in 6 scene(s).",
+  "role": "script speaker",
+  "baseline": "Detected from [Speaker] production tag. Tag is metadata and is not sent to voice generation.",
   "appears_in_scenes": [
-    "S002",
-    "S005",
-    "S006",
-    "S007",
-    "S015",
-    "S016"
+    "S004",
+    "S019"
   ]
 }

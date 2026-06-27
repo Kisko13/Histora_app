@@ -1,4 +1,10 @@
+from pathlib import Path
 
+ROOT = Path(__file__).resolve().parent
+PKG = ROOT / "hps" / "core" / "analysis"
+analyzer = PKG / "analyzer.py"
+
+analyzer.write_text(r'''
 from __future__ import annotations
 
 from .models import AnalysisContext
@@ -104,25 +110,8 @@ class GenericScriptAnalyzer:
         }
 
     def _analyze_tagged(self, script: str, context: AnalysisContext) -> dict:
+        characters = detect_characters(script, context.known_characters, context.main_pov_character)
         tagged_blocks = parse_tagged_script(script, context.main_pov_character or "Narrator")
-
-        speaker_names = []
-        for tb in tagged_blocks:
-            n = tb.speaker.strip()
-            if n and n not in speaker_names:
-                speaker_names.append(n)
-
-        characters = [
-            {
-                "id": n.upper().replace(" ", "_"),
-                "name": n,
-                "role": "POV narrator" if n.lower() in {"marcus", "narrator"} else "script speaker",
-                "baseline": "Detected from [Speaker] production tag. Tag is metadata and is not sent to voice generation.",
-                "appears_in_scenes": [],
-            }
-            for n in speaker_names
-            if n.lower() not in {"endofscript", "echo"}
-        ]
 
         # Remove shell/file junk if it accidentally exists at bottom.
         tagged_blocks = [
@@ -131,34 +120,12 @@ class GenericScriptAnalyzer:
             and tb.text.strip().upper() not in {"ENDOFSCRIPT", 'ECHO "DONE"'}
         ]
 
-        # First group tagged paragraphs into production-sized blocks.
-        # Tags remain metadata; voice text stays clean.
-        production_blocks = []
-        current_speaker = None
-        current_directives = []
-        current_texts = []
-        current_words = 0
-
-        def flush_block():
-            nonlocal current_speaker, current_directives, current_texts, current_words
-            text = "\n\n".join(t.strip() for t in current_texts if t.strip()).strip()
-            if text:
-                production_blocks.append({
-                    "speaker": current_speaker or "Narrator",
-                    "directives": list(current_directives),
-                    "text": text,
-                })
-            current_speaker = None
-            current_directives = []
-            current_texts = []
-            current_words = 0
-
-        def count_words(t):
-            return len((t or "").split())
+        scene_groups = []
+        current = []
 
         for tb in tagged_blocks:
             text = tb.text.strip()
-            speaker = tb.speaker.strip() or "Narrator"
+            speaker = tb.speaker.strip()
 
             structural = (
                 speaker.lower() == "narrator"
@@ -171,40 +138,20 @@ class GenericScriptAnalyzer:
                 )
             )
 
-            if structural:
-                flush_block()
-                continue
+            if current and structural:
+                scene_groups.append(current)
+                current = []
 
-            w = count_words(text)
+            if not structural:
+                current.append(tb)
 
-            # Start a new block when speaker changes or block gets too large.
-            if current_texts and (speaker != current_speaker or current_words + w > 130):
-                flush_block()
+            # production scene size, not every tag
+            if len(current) >= 6:
+                scene_groups.append(current)
+                current = []
 
-            current_speaker = speaker
-            current_directives = tb.directives
-            current_texts.append(text)
-            current_words += w
-
-        flush_block()
-
-        # Now group production blocks into scenes.
-        scene_groups = []
-        current_scene = []
-        current_scene_words = 0
-
-        for pb in production_blocks:
-            w = count_words(pb["text"])
-            if current_scene and (current_scene_words + w > 650 or len(current_scene) >= 6):
-                scene_groups.append(current_scene)
-                current_scene = []
-                current_scene_words = 0
-
-            current_scene.append(pb)
-            current_scene_words += w
-
-        if current_scene:
-            scene_groups.append(current_scene)
+        if current:
+            scene_groups.append(current)
 
         scenes = []
         block_counter = 1
@@ -213,12 +160,12 @@ class GenericScriptAnalyzer:
         for si, group in enumerate(scene_groups, 1):
             sid = f"S{si:03d}"
             blocks = []
-            scene_text = "\n\n".join(pb["text"] for pb in group)
+            scene_text = "\n\n".join(tb.text.strip() for tb in group)
 
-            for pb in group:
+            for tb in group:
                 bid = f"B{block_counter:04d}"
-                clean_text = pb["text"].strip()
-                character = pb["speaker"].strip() or "Narrator"
+                clean_text = tb.text.strip()
+                character = tb.speaker.strip() or "Narrator"
 
                 if character in character_scene_map and sid not in character_scene_map[character]:
                     character_scene_map[character].append(sid)
@@ -230,7 +177,7 @@ class GenericScriptAnalyzer:
                     character=character,
                     context=context,
                     tagged=True,
-                    directives=pb["directives"],
+                    directives=tb.directives,
                 ))
                 block_counter += 1
 
@@ -353,3 +300,7 @@ def plan_to_legacy_importer_shape(plan: dict) -> dict:
         "style_bible": plan.get("style_bible", {}),
         "production_policy": plan.get("production_policy", {}),
     }
+''', encoding="utf-8")
+
+print("Analyzer rewritten with robust tagged-script support.")
+print("Run: .\\run_studio_v24.bat")

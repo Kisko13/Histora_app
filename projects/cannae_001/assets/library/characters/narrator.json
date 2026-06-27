@@ -1,12 +1,9 @@
 {
-  "id": "GAIUS",
-  "name": "Gaius",
-  "role": "script speaker",
+  "id": "NARRATOR",
+  "name": "Narrator",
+  "role": "POV narrator",
   "baseline": "Detected from [Speaker] production tag. Tag is metadata and is not sent to voice generation.",
   "appears_in_scenes": [
-    "S003",
-    "S005",
-    "S014",
-    "S015"
+    "S022"
   ]
 }

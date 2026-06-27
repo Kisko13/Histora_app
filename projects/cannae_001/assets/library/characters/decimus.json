@@ -1,17 +1,10 @@
 {
   "id": "DECIMUS",
   "name": "Decimus",
-  "role": "supporting character",
-  "baseline": "Detected automatically. Appears in 9 scene(s).",
+  "role": "script speaker",
+  "baseline": "Detected from [Speaker] production tag. Tag is metadata and is not sent to voice generation.",
   "appears_in_scenes": [
-    "S002",
-    "S003",
-    "S005",
-    "S007",
-    "S009",
-    "S012",
-    "S013",
-    "S016",
-    "S017"
+    "S004",
+    "S006"
   ]
 }

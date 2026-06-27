@@ -148,7 +148,7 @@ class ProductionPlanEditorDialog(QDialog):
                 tags += block.get("locations", [])[:2]
 
                 b_item = QTreeWidgetItem([
-                    f"{block.get('id', '')}",
+                    f"{block.get('id', '')} — {block.get('title', block.get('scene_label', ''))}",
                     f"{int(block.get('duration_seconds', 0))} sec",
                     ", ".join(tags)
                 ])
