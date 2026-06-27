@@ -1,0 +1,13 @@
+{
+  "id": "HIS",
+  "name": "His",
+  "role": "supporting character",
+  "baseline": "Detected automatically. Appears in 5 scene(s).",
+  "appears_in_scenes": [
+    "S005",
+    "S007",
+    "S013",
+    "S014",
+    "S016"
+  ]
+}

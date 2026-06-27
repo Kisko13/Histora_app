@@ -1,0 +1,267 @@
+{
+  "characters": [
+    {
+      "id": "BECAUSE",
+      "name": "Because",
+      "role": "POV narrator",
+      "baseline": "Detected automatically. Appears in 13 scene(s).",
+      "appears_in_scenes": [
+        "S001",
+        "S003",
+        "S004",
+        "S005",
+        "S009",
+        "S010",
+        "S011",
+        "S012",
+        "S013",
+        "S014",
+        "S015",
+        "S017",
+        "S018"
+      ]
+    },
+    {
+      "id": "DECIMUS",
+      "name": "Decimus",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 9 scene(s).",
+      "appears_in_scenes": [
+        "S002",
+        "S003",
+        "S005",
+        "S007",
+        "S009",
+        "S012",
+        "S013",
+        "S016",
+        "S017"
+      ]
+    },
+    {
+      "id": "FLAVIUS",
+      "name": "Flavius",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 5 scene(s).",
+      "appears_in_scenes": [
+        "S003",
+        "S007",
+        "S009",
+        "S013",
+        "S015"
+      ]
+    },
+    {
+      "id": "GAIUS",
+      "name": "Gaius",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 13 scene(s).",
+      "appears_in_scenes": [
+        "S002",
+        "S004",
+        "S006",
+        "S007",
+        "S008",
+        "S009",
+        "S011",
+        "S012",
+        "S013",
+        "S014",
+        "S015",
+        "S016",
+        "S017"
+      ]
+    },
+    {
+      "id": "HANNIBAL",
+      "name": "Hannibal",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 3 scene(s).",
+      "appears_in_scenes": [
+        "S002",
+        "S009",
+        "S017"
+      ]
+    },
+    {
+      "id": "HIS",
+      "name": "His",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 5 scene(s).",
+      "appears_in_scenes": [
+        "S005",
+        "S007",
+        "S013",
+        "S014",
+        "S016"
+      ]
+    },
+    {
+      "id": "JUST",
+      "name": "Just",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 8 scene(s).",
+      "appears_in_scenes": [
+        "S004",
+        "S006",
+        "S008",
+        "S009",
+        "S012",
+        "S014",
+        "S015",
+        "S018"
+      ]
+    },
+    {
+      "id": "MARCUS",
+      "name": "Marcus",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 2 scene(s).",
+      "appears_in_scenes": [
+        "S002",
+        "S013"
+      ]
+    },
+    {
+      "id": "NOT",
+      "name": "Not",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 13 scene(s).",
+      "appears_in_scenes": [
+        "S002",
+        "S004",
+        "S006",
+        "S008",
+        "S009",
+        "S010",
+        "S011",
+        "S012",
+        "S013",
+        "S014",
+        "S015",
+        "S016",
+        "S017"
+      ]
+    },
+    {
+      "id": "PUBLIUS",
+      "name": "Publius",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 9 scene(s).",
+      "appears_in_scenes": [
+        "S002",
+        "S006",
+        "S007",
+        "S008",
+        "S009",
+        "S014",
+        "S015",
+        "S016",
+        "S017"
+      ]
+    },
+    {
+      "id": "QUINTUS",
+      "name": "Quintus",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 6 scene(s).",
+      "appears_in_scenes": [
+        "S002",
+        "S005",
+        "S006",
+        "S007",
+        "S015",
+        "S016"
+      ]
+    },
+    {
+      "id": "TELL",
+      "name": "Tell",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 3 scene(s).",
+      "appears_in_scenes": [
+        "S007",
+        "S008",
+        "S016"
+      ]
+    },
+    {
+      "id": "THEY",
+      "name": "They",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 5 scene(s).",
+      "appears_in_scenes": [
+        "S002",
+        "S006",
+        "S010",
+        "S012",
+        "S018"
+      ]
+    },
+    {
+      "id": "TITUS",
+      "name": "Titus",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 12 scene(s).",
+      "appears_in_scenes": [
+        "S002",
+        "S005",
+        "S006",
+        "S007",
+        "S008",
+        "S009",
+        "S010",
+        "S013",
+        "S014",
+        "S015",
+        "S016",
+        "S017"
+      ]
+    },
+    {
+      "id": "TWO",
+      "name": "Two",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 2 scene(s).",
+      "appears_in_scenes": [
+        "S009",
+        "S015"
+      ]
+    },
+    {
+      "id": "VIBIUS",
+      "name": "Vibius",
+      "role": "supporting character",
+      "baseline": "Detected automatically. Appears in 4 scene(s).",
+      "appears_in_scenes": [
+        "S002",
+        "S005",
+        "S007",
+        "S015"
+      ]
+    }
+  ],
+  "locations": [
+    "camp",
+    "city",
+    "farm",
+    "field",
+    "fire",
+    "hill",
+    "plain",
+    "river",
+    "road",
+    "shore",
+    "tent",
+    "wall"
+  ],
+  "equipment": [
+    "armor",
+    "boots",
+    "helmet",
+    "horse",
+    "shield",
+    "standard",
+    "wagon"
+  ]
+}

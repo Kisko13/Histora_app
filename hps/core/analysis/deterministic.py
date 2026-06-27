@@ -43,28 +43,51 @@ SFX_WORDS = {
 
 def detect_names(script: str, context: AnalysisContext) -> list[str]:
     """
-    Generic character discovery.
+    Final generic character detection.
 
-    Rules:
-    - user-provided known characters always win
-    - main POV character always wins
-    - capitalized repeated names are candidates
-    - headings/common title words are ignored
-    - location/equipment words are ignored
-    - one-off capitalized words are usually not characters
-    - dialogue-heavy unnamed scripts fall back to Speaker A / Speaker B
+    Priority:
+    1. User-provided known characters.
+    2. Main POV character.
+    3. Strong repeated proper names only.
+    4. Dialogue-heavy unnamed scripts -> Speaker A / Speaker B.
+
+    This avoids treating headings, places, titles, sentence starters,
+    months, and random capitalized words as characters.
     """
-    names = set()
+    explicit = set()
 
     for n in context.known_characters or []:
         n = (n or "").strip()
         if n:
-            names.add(n)
+            explicit.add(n)
 
     if context.main_pov_character:
-        names.add(context.main_pov_character.strip())
+        explicit.add(context.main_pov_character.strip())
 
-    # Strip headings to reduce false positives.
+    if explicit:
+        return sorted(explicit)
+
+    # Dialogue-heavy unnamed text should not invent many fake characters.
+    quote_lines = [l.strip() for l in script.splitlines() if l.strip().startswith('"')]
+    if len(quote_lines) >= 8:
+        # If there are no clear speaker tags, use generic speakers.
+        speaker_tagged = any(re.match(r"^[A-Z][A-Za-z ]{1,30}:", l) for l in script.splitlines())
+        if not speaker_tagged:
+            return ["Speaker A", "Speaker B"]
+
+    bad = set(STOP_NAMES)
+    bad.update(w.title() for w in LOCATION_WORDS)
+    bad.update(w.title() for w in EQUIPMENT_WORDS)
+    bad.update({
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday",
+        "January", "February", "March", "April", "May", "June", "July", "August",
+        "September", "October", "November", "December",
+        "North", "South", "East", "West",
+        "Rome", "Cannae", "Canusium", "Capua", "Aufidus",
+        "Morning", "Perfect", "Exactly", "Probably", "Really", "Good",
+        "Someone", "Everyone", "Nobody", "Nothing", "Everything",
+    })
+
     body_lines = []
     for line in script.splitlines():
         stripped = line.strip()
@@ -72,34 +95,44 @@ def detect_names(script: str, context: AnalysisContext) -> list[str]:
             continue
         if stripped.startswith("#"):
             continue
-        if len(stripped.split()) <= 5 and stripped.isupper():
+        if stripped.startswith("*") and stripped.endswith("*"):
+            continue
+        if len(stripped.split()) <= 6 and stripped.upper() == stripped:
             continue
         body_lines.append(stripped)
 
     body = "\n".join(body_lines)
 
-    candidates = re.findall(r"\b[A-Z][a-z]{2,}\b", body)
-    counts = Counter(candidates)
+    # Detect single-token names repeated strongly.
+    one_word = re.findall(r"\b[A-Z][a-z]{2,}\b", body)
+    one_counts = Counter(x for x in one_word if x not in bad)
 
-    bad = set(STOP_NAMES)
-    bad.update(w.title() for w in LOCATION_WORDS)
-    bad.update(w.title() for w in EQUIPMENT_WORDS)
-
-    for name, count in counts.items():
-        if name in bad:
-            continue
-        if count >= 2:
+    names = set()
+    for name, count in one_counts.items():
+        if count >= 4:
             names.add(name)
 
-    # Dialogue-heavy script with no named people.
-    quote_lines = [l for l in script.splitlines() if l.strip().startswith('"')]
-    if not names and len(quote_lines) >= 6:
-        names.update(["Speaker A", "Speaker B"])
+    # Detect full names, e.g. Marcus Servilius, Publius Cornelius Scipio.
+    full_names = re.findall(r"\b([A-Z][a-z]{2,}(?:\s+[A-Z][a-z]{2,}){1,2})\b", body)
+    full_counts = Counter()
+    for fn in full_names:
+        parts = fn.split()
+        if any(p in bad for p in parts):
+            continue
+        full_counts[fn] += 1
+
+    for fn, count in full_counts.items():
+        if count >= 1:
+            # Keep first name as usable character label unless full name repeats.
+            first = fn.split()[0]
+            if one_counts.get(first, 0) >= 2:
+                names.add(first)
 
     if not names:
         names.add("Narrator")
 
-    return sorted(names)
+    # Cap discovered characters. Extra capitalized names become references, not production characters.
+    return sorted(names)[:16]
 
 def detect_terms(text: str, base: set[str], known: list[str]) -> list[str]:
     low = text.lower()

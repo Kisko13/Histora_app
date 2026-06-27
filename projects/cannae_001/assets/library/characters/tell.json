@@ -1,0 +1,11 @@
+{
+  "id": "TELL",
+  "name": "Tell",
+  "role": "supporting character",
+  "baseline": "Detected automatically. Appears in 3 scene(s).",
+  "appears_in_scenes": [
+    "S007",
+    "S008",
+    "S016"
+  ]
+}

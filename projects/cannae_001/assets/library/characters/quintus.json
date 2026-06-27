@@ -1,0 +1,14 @@
+{
+  "id": "QUINTUS",
+  "name": "Quintus",
+  "role": "supporting character",
+  "baseline": "Detected automatically. Appears in 6 scene(s).",
+  "appears_in_scenes": [
+    "S002",
+    "S005",
+    "S006",
+    "S007",
+    "S015",
+    "S016"
+  ]
+}

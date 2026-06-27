@@ -1,0 +1,10 @@
+{
+  "id": "TWO",
+  "name": "Two",
+  "role": "supporting character",
+  "baseline": "Detected automatically. Appears in 2 scene(s).",
+  "appears_in_scenes": [
+    "S009",
+    "S015"
+  ]
+}

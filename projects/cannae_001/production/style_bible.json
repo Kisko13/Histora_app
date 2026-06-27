@@ -1,0 +1,6 @@
+{
+  "visual_style": "cinematic historical realism, immersive first-person POV, grounded sensory detail",
+  "camera": "eye-level human perspective, documentary still, no poster posing",
+  "lighting": "natural practical light based on script",
+  "negative_prompt": "fantasy, modern objects, modern roads, text, watermark, video game style"
+}

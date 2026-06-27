@@ -1,0 +1,13 @@
+{
+  "id": "FLAVIUS",
+  "name": "Flavius",
+  "role": "supporting character",
+  "baseline": "Detected automatically. Appears in 5 scene(s).",
+  "appears_in_scenes": [
+    "S003",
+    "S007",
+    "S009",
+    "S013",
+    "S015"
+  ]
+}

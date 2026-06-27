@@ -1,0 +1,21 @@
+{
+  "id": "BECAUSE",
+  "name": "Because",
+  "role": "POV narrator",
+  "baseline": "Detected automatically. Appears in 13 scene(s).",
+  "appears_in_scenes": [
+    "S001",
+    "S003",
+    "S004",
+    "S005",
+    "S009",
+    "S010",
+    "S011",
+    "S012",
+    "S013",
+    "S014",
+    "S015",
+    "S017",
+    "S018"
+  ]
+}

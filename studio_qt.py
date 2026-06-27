@@ -150,11 +150,17 @@ class StudioQt(QMainWindow):
 
         dlg = ProjectWizardDialog(self.db, self)
         if dlg.exec() and getattr(dlg, "generated", False):
-            self.project_label.setText(str(self.db.path))
-            p = self.db.project()
-            self.title_label.setText(p["title"] if p else "Historical POV Studio")
-            self.refresh_all()
-            self.auto_select_first_block()
+            generated_path = getattr(dlg, "generated_project_path", None)
+
+            if generated_path:
+                # Reopen the generated project so all main-studio panels refresh from disk.
+                self.open_project(Path(generated_path))
+            else:
+                self.project_label.setText(str(self.db.path))
+                p = self.db.project()
+                self.title_label.setText(p["title"] if p else "Historical POV Studio")
+                self.refresh_all()
+                self.auto_select_first_block()
 
     def open_project_dialog(self):
         path, _ = QFileDialog.getOpenFileName(

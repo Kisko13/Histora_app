@@ -17,6 +17,7 @@ from PySide6.QtWidgets import (
 from hps.core.script_importer import ScriptImporter
 from hps.core.analysis.models import AnalysisContext
 from hps.core.analysis.analyzer import GenericScriptAnalyzer, plan_metrics, plan_to_legacy_importer_shape
+from hps_qt.dialogs.production_plan_editor import ProductionPlanEditorDialog
 
 
 def _read_docx(path: Path) -> str:
@@ -85,6 +86,7 @@ class ProjectWizardDialog(QDialog):
         self.db = db
         self.plan = None
         self.generated = False
+        self.generated_project_path = None
 
         self.setWindowTitle("V25 — New Historical Episode Wizard")
         self.resize(1150, 820)
@@ -148,10 +150,13 @@ class ProjectWizardDialog(QDialog):
 
         actions = QHBoxLayout()
         self.analyze_btn = QPushButton("Analyze Script")
+        self.review_btn = QPushButton("Review Production Plan")
+        self.review_btn.setEnabled(False)
         self.generate_btn = QPushButton("Generate Project")
         self.generate_btn.setEnabled(False)
         self.close_btn = QPushButton("Close")
         actions.addWidget(self.analyze_btn)
+        actions.addWidget(self.review_btn)
         actions.addWidget(self.generate_btn)
         actions.addStretch()
         actions.addWidget(self.close_btn)
@@ -179,6 +184,7 @@ class ProjectWizardDialog(QDialog):
         self.import_btn.clicked.connect(self.import_script)
         self.clear_btn.clicked.connect(self.script_text.clear)
         self.analyze_btn.clicked.connect(self.analyze_script)
+        self.review_btn.clicked.connect(self.review_plan)
         self.generate_btn.clicked.connect(self.generate_project)
         self.close_btn.clicked.connect(self.reject)
 
@@ -232,7 +238,8 @@ class ProjectWizardDialog(QDialog):
 
         self.plan = plan
         self.populate_preview(plan)
-        self.generate_btn.setEnabled(True)
+        self.review_btn.setEnabled(True)
+        self.generate_btn.setEnabled(False)
 
     def populate_preview(self, plan: dict):
         stats = _plan_stats(plan)
@@ -284,6 +291,20 @@ class ProjectWizardDialog(QDialog):
 
         self.json_preview.setPlainText(json.dumps(plan, indent=2, ensure_ascii=False))
 
+    def review_plan(self):
+        if not self.plan:
+            QMessageBox.warning(self, "No analysis", "Analyze the script first.")
+            return
+
+        dlg = ProductionPlanEditorDialog(self.plan, self)
+        if dlg.exec() and getattr(dlg, "approved", False):
+            self.generate_btn.setEnabled(True)
+            QMessageBox.information(
+                self,
+                "Production Plan Approved",
+                "Production plan approved. You can now generate the project."
+            )
+
     def generate_project(self):
         if not self.plan:
             QMessageBox.warning(self, "No analysis", "Analyze the script first.")
@@ -302,12 +323,30 @@ class ProjectWizardDialog(QDialog):
             importer = ScriptImporter(self.db)
             legacy_plan = plan_to_legacy_importer_shape(self.plan)
             result = importer.apply_plan(legacy_plan, replace_existing=True)
+
+            # Save the full V25 production analysis beside the .hps project.
+            try:
+                import json
+                project_path = Path(str(self.db.path))
+                production_dir = project_path.parent / "production"
+                production_dir.mkdir(parents=True, exist_ok=True)
+                latest_plan_path = production_dir / "script_plan_latest.json"
+                latest_plan_path.write_text(
+                    json.dumps(self.plan, indent=2, ensure_ascii=False),
+                    encoding="utf-8"
+                )
+            except Exception:
+                pass
+
             self.generated = True
+            self.generated_project_path = Path(str(self.db.path))
+
             QMessageBox.information(
                 self,
                 "Project Generated",
                 f"Created {result['scenes']} scene(s) and {result['blocks']} block(s).\n\n"
-                f"Source: {result['source']}"
+                f"Source: {result['source']}\n\n"
+                f"The project will now reload in the main studio."
             )
             self.accept()
         except Exception as exc:

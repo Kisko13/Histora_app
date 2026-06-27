@@ -1,0 +1,20 @@
+{
+  "id": "TITUS",
+  "name": "Titus",
+  "role": "supporting character",
+  "baseline": "Detected automatically. Appears in 12 scene(s).",
+  "appears_in_scenes": [
+    "S002",
+    "S005",
+    "S006",
+    "S007",
+    "S008",
+    "S009",
+    "S010",
+    "S013",
+    "S014",
+    "S015",
+    "S016",
+    "S017"
+  ]
+}
