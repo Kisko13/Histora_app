@@ -1,3 +1,40 @@
+import re
+import json
+from pathlib import Path
+
+def clean_voice_text_v26(text: str) -> str:
+    """
+    Speaker tags are metadata only.
+    Never send [Marcus], [Titus], etc. to voice generation.
+    """
+    text = text or ""
+    text = re.sub(r"(?m)^\s*\[[A-Za-z0-9 _.'-]+(?:\|[^\]]+)?\]\s*$", "", text)
+    text = text.replace("ENDOFSCRIPT", "")
+    text = re.sub(r"(?m)^echo\s+[\"']?Done[\"']?\s*$", "", text, flags=re.I)
+    return text.strip()
+
+def assert_voice_text_safe_v26(text: str):
+    if re.search(r"(?m)^\s*\[[A-Za-z0-9 _.'-]+(?:\|[^\]]+)?\]\s*$", text or ""):
+        raise RuntimeError("Voice text still contains speaker tags. Refusing to generate paid voice.")
+
+def save_voice_request_v26(output_audio_path, block_id, character, provider, voice_text):
+    try:
+        p = Path(output_audio_path)
+        data = {
+            "block_id": block_id,
+            "character": character,
+            "provider": provider,
+            "voice_text": voice_text,
+            "paid_step": True,
+            "speaker_tags_removed": True,
+        }
+        (p.parent / f"{p.stem}_voice_request.json").write_text(
+            json.dumps(data, indent=2, ensure_ascii=False),
+            encoding="utf-8"
+        )
+    except Exception:
+        pass
+
 from pathlib import Path
 
 from PySide6.QtWidgets import (

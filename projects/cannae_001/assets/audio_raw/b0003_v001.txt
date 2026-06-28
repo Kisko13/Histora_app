@@ -1,0 +1,22 @@
+MOCK AUDIO — FREE
+
+PROJECT: Cannae Tagged Production Script
+SCENE: Before Dawn
+BLOCK: b0003
+CHARACTER: marcus
+VOICE_STATE: narrator_slow
+
+CHARACTER BASELINE:
+Detected from [Speaker] production tag. Tag is metadata and is not sent to voice generation.
+
+DELIVERY:
+Slow immersive historical POV narration; restrained, tired, human.
+
+SCRIPT:
+I was twenty-three years old, a farmer's son from outside Capua, the third of four children, a man who had done nothing remarkable in his life and who had no expectation of doing anything remarkable. I had been in the army for fourteen months. I slept in a tent with seven men whose smells I knew better than my own. I carried a scutum, two pila, and a gladius I had sharpened so many times the blade was beginning to narrow at the base.
+
+I was nobody.
+
+Of the eighty thousand Romans who marched toward Hannibal on the second day of August in the year we called 538 from the founding of the city — almost none of us believed we could lose.
+
+I want you to remember that.

@@ -5,6 +5,9 @@ from PySide6.QtWidgets import QApplication,QMainWindow,QWidget,QVBoxLayout,QHBox
 from PySide6.QtCore import Qt
 from hps.core.project_service import ProjectService
 from hps.core.cost_control import cost_guard
+from hps.core.voice_pipeline import generate_voice_for_block
+from hps.core.production_queues import ensure_character_library, generate_missing_voices, generate_missing_images, generate_missing_music
+from hps.core.batch_production import run_batch_production
 from hps.pipeline.build import BuildPipeline
 from hps.pipeline.export import export_capcut_csv
 from hps_qt.widgets.stat_card import StatCard
@@ -181,6 +184,115 @@ class StudioQt(QMainWindow):
         self.refresh_all()
         self.auto_select_first_block()
 
+
+
+
+    def v27_generate_missing_assets(self):
+        if not self.db:
+            return
+
+        from PySide6.QtWidgets import QInputDialog
+
+        limit, ok = QInputDialog.getInt(
+            self,
+            "Batch Production",
+            "How many missing blocks to generate per asset type?\nUse 0 for ALL.\nFor testing use 3, 5, or 10.",
+            5,
+            0,
+            100000,
+            1,
+        )
+
+        if not ok:
+            return
+
+        provider = self.provider_box.currentText() if hasattr(self, "provider_box") else "mock"
+        real_limit = None if limit == 0 else limit
+
+        try:
+            report = run_batch_production(
+                self.db,
+                provider=provider,
+                generate_voice=True,
+                generate_images=True,
+                generate_music=True,
+                limit=real_limit,
+            )
+
+            msg = []
+            for step in report["steps"]:
+                msg.append(f"{step['step']}: {step['generated']}")
+
+            QMessageBox.information(
+                self,
+                "Batch Production Complete",
+                "Generated:\n"
+                + "\n".join(msg)
+                + f"\n\nReport:\n{report['report_path']}"
+            )
+
+            self.refresh_all()
+            if self.selected_block_id:
+                self.select_block(self.selected_block_id)
+
+        except Exception as exc:
+            QMessageBox.critical(self, "Batch Production Failed", str(exc))
+
+    def v27_character_library(self):
+        if not self.db:
+            return
+        path = ensure_character_library(self.db)
+        QMessageBox.information(self, "Character Library", f"Character library saved:\n{path}")
+
+    def v27_generate_missing_voices(self):
+        if not self.db:
+            return
+        provider = self.provider_box.currentText() if hasattr(self, "provider_box") else "mock"
+        done = generate_missing_voices(self.db, provider=provider)
+        QMessageBox.information(self, "Voice Queue Complete", f"Generated {len(done)} voice file(s).")
+        self.refresh_all()
+        if self.selected_block_id:
+            self.select_block(self.selected_block_id)
+
+    def v27_generate_missing_images(self):
+        if not self.db:
+            return
+        done = generate_missing_images(self.db)
+        QMessageBox.information(self, "Image Queue Complete", f"Generated {len(done)} mock image placeholder(s).")
+        self.refresh_all()
+        if self.selected_block_id:
+            self.select_block(self.selected_block_id)
+
+    def v27_generate_missing_music(self):
+        if not self.db:
+            return
+        done = generate_missing_music(self.db)
+        QMessageBox.information(self, "Music Queue Complete", f"Generated {len(done)} mock music placeholder(s).")
+        self.refresh_all()
+        if self.selected_block_id:
+            self.select_block(self.selected_block_id)
+
+    def generate_current_voice_v26(self):
+        if not self.db or not self.selected_block_id:
+            QMessageBox.warning(self, "No block selected", "Select a block first.")
+            return
+
+        provider = self.provider_box.currentText() if hasattr(self, "provider_box") else "mock"
+
+        try:
+            result = generate_voice_for_block(self.db, self.selected_block_id, provider=provider)
+            QMessageBox.information(
+                self,
+                "Voice Generated",
+                f"Generated voice for {result['block_id']}.\n\n"
+                f"Character: {result['character']}\n"
+                f"File: {result['audio_path']}\n\n"
+                f"Clean text was saved in voice_request.json."
+            )
+            self.refresh_current_block_fast_v27()
+        except Exception as exc:
+            QMessageBox.critical(self, "Voice generation failed", str(exc))
+
     def current_cost_info(self):
         return cost_guard(self.db, self.mode_box.currentText(), self.provider_box.currentText()) if self.db else None
 
@@ -193,6 +305,20 @@ class StudioQt(QMainWindow):
         rows = self.db.blocks()
         if rows:
             self.select_block(rows[0]["id"])
+
+
+    def refresh_current_block_fast_v27(self):
+        """Lightweight refresh after image/music/voice approve/import."""
+        try:
+            if self.selected_block_id:
+                self.select_block(self.selected_block_id)
+            if hasattr(self, "assistant_panel"):
+                self.assistant_panel.refresh()
+        except Exception:
+            try:
+                self.refresh_all()
+            except Exception:
+                pass
 
     def refresh_all(self):
         if not self.db: return

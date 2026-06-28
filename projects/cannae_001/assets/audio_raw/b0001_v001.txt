@@ -1,0 +1,24 @@
+MOCK AUDIO — FREE
+
+PROJECT: Cannae Tagged Production Script
+SCENE: Before Dawn
+BLOCK: b0001
+CHARACTER: marcus
+VOICE_STATE: narrator_slow
+
+CHARACTER BASELINE:
+Detected from [Speaker] production tag. Tag is metadata and is not sent to voice generation.
+
+DELIVERY:
+Slow immersive historical POV narration; restrained, tired, human.
+
+SCRIPT:
+The flies always found us before dawn.
+
+Long before Hannibal.
+
+Long before the screaming.
+
+Long before Rome lost more sons than anyone believed possible in a single afternoon on a flat and unremarkable plain in the south of Italy.
+
+The flies always found us first.
