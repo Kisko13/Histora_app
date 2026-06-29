@@ -1,0 +1,16 @@
+{
+  "scene_id": "s010",
+  "title": "Near the River",
+  "status": "approved",
+  "duration_seconds": 274,
+  "block_ids": [
+    "b0053",
+    "b0054",
+    "b0055",
+    "b0056",
+    "b0057",
+    "b0058"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. Near the River: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s010/approved.txt"
+}

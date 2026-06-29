@@ -1,0 +1,16 @@
+{
+  "scene_id": "s020",
+  "title": "By the Fire",
+  "status": "approved",
+  "duration_seconds": 117,
+  "block_ids": [
+    "b0113",
+    "b0114",
+    "b0115",
+    "b0116",
+    "b0117",
+    "b0118"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. By the Fire: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s020/approved.txt"
+}

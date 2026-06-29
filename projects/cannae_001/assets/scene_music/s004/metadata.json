@@ -1,0 +1,16 @@
+{
+  "scene_id": "s004",
+  "title": "Inside the Tent",
+  "status": "approved",
+  "duration_seconds": 193,
+  "block_ids": [
+    "b0018",
+    "b0019",
+    "b0020",
+    "b0021",
+    "b0022",
+    "b0023"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s004/approved.txt"
+}

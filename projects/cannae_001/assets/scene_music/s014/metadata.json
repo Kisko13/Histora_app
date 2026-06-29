@@ -1,0 +1,16 @@
+{
+  "scene_id": "s014",
+  "title": "That was all.",
+  "status": "approved",
+  "duration_seconds": 94,
+  "block_ids": [
+    "b0077",
+    "b0078",
+    "b0079",
+    "b0080",
+    "b0081",
+    "b0082"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. That was all.: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s014/approved.txt"
+}

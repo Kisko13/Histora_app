@@ -1,0 +1,5 @@
+V31 SCENE MUSIC POINTER — this block reuses the scene music bed.
+
+BLOCK: b0114
+SCENE: s020
+SCENE_MUSIC_ASSET: assets/scene_music/s020/approved.txt

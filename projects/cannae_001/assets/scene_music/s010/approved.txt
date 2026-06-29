@@ -1,0 +1,8 @@
+MOCK SCENE MUSIC PLACEHOLDER — FREE/LOCAL
+
+SCENE: s010
+TITLE: Near the River
+DURATION: 274 sec
+
+CUE:
+SCENE MUSIC ONLY, not per block. Near the River: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.

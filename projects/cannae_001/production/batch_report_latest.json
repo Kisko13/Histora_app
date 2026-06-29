@@ -1,0 +1,646 @@
+{
+  "started": "2026-06-28T21:46:05",
+  "version": "v28_visual_slots_scene_music",
+  "provider": "mock",
+  "voice_limit": 5,
+  "visual_slots_requested": 3,
+  "steps": [
+    {
+      "step": "voices",
+      "generated": 5,
+      "items": [
+        {
+          "block_id": "b0006",
+          "character": "marcus",
+          "provider": "mock",
+          "audio_path": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\assets\\audio_raw\\b0006_marcus_v001.wav",
+          "audio_rel_path": "assets/audio_raw/b0006_marcus_v001.wav",
+          "voice_text": "We all said nothing.\n\nAnd there were four others — Quintus, another man whose name I cannot now fully recall, a Samnite from the allied contingent named Vibius who spoke Latin badly and gambled extremely well, and Decimus.\n\nDecimus was from Beneventum. He had a gap between his two front teeth that made him whistle slightly when he said his s's, which he found embarrassing and which the rest of us found quietly endearing. He was twenty-six. He had a sister he talked about sometimes — not often, just occasionally, the way you mention something that matters without wanting to seem like it matters too much. Her name was Horatia. He was teaching himself to read so he could write to her without asking a clerk.\n\n---",
+          "version": 1
+        },
+        {
+          "block_id": "b0007",
+          "character": "marcus",
+          "provider": "mock",
+          "audio_path": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\assets\\audio_raw\\b0007_marcus_v001.wav",
+          "audio_rel_path": "assets/audio_raw/b0007_marcus_v001.wav",
+          "voice_text": "The centurion of our century was a man named Gnaeus Flavius.\n\nHe had a scar from his left ear to his chin from a skirmish in Illyricum that he never discussed, and which gave his face, when he turned it a certain way in certain light, the look of a man assembled from two slightly different faces. He had been in the army since I was eight years old. He did not shout — not as a general practice. He had the particular authority of men who have learned that volume is for men who are not being listened to.",
+          "version": 1
+        },
+        {
+          "block_id": "b0008",
+          "character": "marcus",
+          "provider": "mock",
+          "audio_path": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\assets\\audio_raw\\b0008_marcus_v001.wav",
+          "audio_rel_path": "assets/audio_raw/b0008_marcus_v001.wav",
+          "voice_text": "He inspected equipment without comment. He corrected with his hands more than his voice — he would simply take the thing being done wrong and do it right, silently, and hand it back. The first time he did this to me, taking my wax block and reworking the leather facing of my scutum with three strokes that achieved what my ten had not, I felt both embarrassed and oddly grateful.\n\nHe was, in the vocabulary I have assembled over years of thinking about the men who shaped me, a man you wanted to be worthy of.\n\nThis is rarer than it sounds.\n\n---\n\nThe camp on the Aufidus River.",
+          "version": 1
+        },
+        {
+          "block_id": "b0009",
+          "character": "marcus",
+          "provider": "mock",
+          "audio_path": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\assets\\audio_raw\\b0009_marcus_v001.wav",
+          "audio_rel_path": "assets/audio_raw/b0009_marcus_v001.wav",
+          "voice_text": "It is the fifth day of August by the old count, two days before the battle, and the camp is everything a Roman camp is — enormous, orderly, terrible-smelling, full of the particular noise of eighty thousand men being military at each other.\n\nThe Aufidus runs brown and low to the south. The summer has been brutal and dry and the river shows it — lower than it should be, the banks cracked at the edges, the water slow. Flies breed in slow water. There are consequently a great many flies.",
+          "version": 1
+        },
+        {
+          "block_id": "b0010",
+          "character": "marcus",
+          "provider": "mock",
+          "audio_path": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\assets\\audio_raw\\b0010_marcus_v001.wav",
+          "audio_rel_path": "assets/audio_raw/b0010_marcus_v001.wav",
+          "voice_text": "The heat by mid-morning is a physical weight. It settles on your shoulders the way a pack does — not dramatically, not all at once, but cumulatively, each hour adding something, until by midday you are aware of it in every movement.\n\nThe dust is everywhere. It comes from ten thousand feet and ten thousand hooves and the mule teams and the wagon wheels and the simple fact of this many bodies occupying this much dry ground in an Apulian August. It is in your eyes. It is in the folds of your subarmalis where it combines with sweat into a paste that chafes the shoulders and neck.\n\nIt gets in your teeth.",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "step": "visual_slots",
+      "generated": 3,
+      "items": [
+        {
+          "id": "VIS001",
+          "title": "Before Dawn",
+          "start_block": "b0001",
+          "end_block": "b0041",
+          "block_ids": [
+            "b0001",
+            "b0002",
+            "b0003",
+            "b0004",
+            "b0005",
+            "b0006",
+            "b0007",
+            "b0008",
+            "b0009",
+            "b0010",
+            "b0011",
+            "b0012",
+            "b0013",
+            "b0014",
+            "b0015",
+            "b0016",
+            "b0017",
+            "b0018",
+            "b0019",
+            "b0020",
+            "b0021",
+            "b0022",
+            "b0023",
+            "b0024",
+            "b0025",
+            "b0026",
+            "b0027",
+            "b0028",
+            "b0029",
+            "b0030",
+            "b0031",
+            "b0032",
+            "b0033",
+            "b0034",
+            "b0035",
+            "b0036",
+            "b0037",
+            "b0038",
+            "b0039",
+            "b0040",
+            "b0041"
+          ],
+          "scene_titles": [
+            "Before Dawn",
+            "Near the River",
+            "Inside the Tent",
+            "By the Fire"
+          ],
+          "characters": [
+            "marcus",
+            "gaius",
+            "quintus",
+            "decimus",
+            "titus",
+            "publius",
+            "flavius"
+          ],
+          "duration_seconds": 1222,
+          "prompt": "cinematic historical POV still, listening-first YouTube documentary, visual slot 1, scenes: Before Dawn, Near the River, Inside the Tent, characters: marcus, gaius, quintus, decimus, locations/objects: plain, road, camp, tent, river, fire, hill, city, Roman Republic, Battle of Cannae context, grounded realism, natural light, human eye-level perspective, slow zoom friendly composition, no modern objects, no fantasy, story moment: first-person immersive historical POV still, Roman Republic, character focus: Marcus, location: plain, equipment/objects: period-correct clothing and props, emotion: battle tension, cinematic realism, natural light, human-scale composition, no fantasy, no modern objects, moment: The flies always found us before dawn. Long before Hannibal. Long before the screaming. Long before Rome lost more sons than anyone believed possible in a single afternoon on a flat and unremarkable plain in the south of Italy. The flies al, cinematic historical realism, immersive first-person POV, grounded sensory detail, eye-level human perspective, documentary still, no poster posing, natural practical light based",
+          "negative_prompt": "modern objects, fantasy armor, video game style, text, watermark, poster pose",
+          "status": "generated",
+          "asset_path": "assets/visual_slots/VIS001/approved.txt"
+        },
+        {
+          "id": "VIS002",
+          "title": "Inside the Tent",
+          "start_block": "b0042",
+          "end_block": "b0070",
+          "block_ids": [
+            "b0042",
+            "b0043",
+            "b0044",
+            "b0045",
+            "b0046",
+            "b0047",
+            "b0048",
+            "b0049",
+            "b0050",
+            "b0051",
+            "b0052",
+            "b0053",
+            "b0054",
+            "b0055",
+            "b0056",
+            "b0057",
+            "b0058",
+            "b0059",
+            "b0060",
+            "b0061",
+            "b0062",
+            "b0063",
+            "b0064",
+            "b0065",
+            "b0066",
+            "b0067",
+            "b0068",
+            "b0069",
+            "b0070"
+          ],
+          "scene_titles": [
+            "Before Dawn",
+            "Inside the Tent",
+            "Near the River",
+            "The man behind me is breathing on the back",
+            "Battlefield"
+          ],
+          "characters": [
+            "marcus",
+            "titus"
+          ],
+          "duration_seconds": 1210,
+          "prompt": "cinematic historical POV still, listening-first YouTube documentary, visual slot 2, scenes: Before Dawn, Inside the Tent, Near the River, characters: marcus, titus, locations/objects: tent, road, camp, plain, hill, river, helmet, standard, Roman Republic, Battle of Cannae context, grounded realism, natural light, human eye-level perspective, slow zoom friendly composition, no modern objects, no fantasy, story moment: first-person immersive historical POV still, Roman Republic, character focus: Marcus, location: tent, equipment/objects: period-correct clothing and props, emotion: dread, cinematic realism, natural light, human-scale composition, no fantasy, no modern objects, moment: I lie down and stare at the tent ceiling in the dark and hold his words in my head and think about my own mother, and her hand on my face in the dark, and the thing I never said. Some things don't need saying. I fall asleep still thinking i, cinematic historical realism, immersive first-person POV, grounded sensory detail, eye-level human perspective, documentary still, no poster posing, natural practical light based on script",
+          "negative_prompt": "modern objects, fantasy armor, video game style, text, watermark, poster pose",
+          "status": "generated",
+          "asset_path": "assets/visual_slots/VIS002/approved.txt"
+        },
+        {
+          "id": "VIS003",
+          "title": "Battlefield",
+          "start_block": "b0071",
+          "end_block": "b0125",
+          "block_ids": [
+            "b0071",
+            "b0072",
+            "b0073",
+            "b0074",
+            "b0075",
+            "b0076",
+            "b0077",
+            "b0078",
+            "b0079",
+            "b0080",
+            "b0081",
+            "b0082",
+            "b0083",
+            "b0084",
+            "b0085",
+            "b0086",
+            "b0087",
+            "b0088",
+            "b0089",
+            "b0090",
+            "b0091",
+            "b0092",
+            "b0093",
+            "b0094",
+            "b0095",
+            "b0096",
+            "b0097",
+            "b0098",
+            "b0099",
+            "b0100",
+            "b0101",
+            "b0102",
+            "b0103",
+            "b0104",
+            "b0105",
+            "b0106",
+            "b0107",
+            "b0108",
+            "b0109",
+            "b0110",
+            "b0111",
+            "b0112",
+            "b0113",
+            "b0114",
+            "b0115",
+            "b0116",
+            "b0117",
+            "b0118",
+            "b0119",
+            "b0120",
+            "b0121",
+            "b0122",
+            "b0123",
+            "b0124",
+            "b0125"
+          ],
+          "scene_titles": [
+            "Battlefield",
+            "That was all.",
+            "\"I ran.\" \"Listen.\" Gaius says it the way he",
+            "Inside the Tent",
+            "By the Fire",
+            "On the Road"
+          ],
+          "characters": [
+            "titus",
+            "marcus",
+            "publius",
+            "gaius",
+            "quintus",
+            "narrator"
+          ],
+          "duration_seconds": 1189,
+          "prompt": "cinematic historical POV still, listening-first YouTube documentary, visual slot 3, scenes: Battlefield, That was all., \"I ran.\" \"Listen.\" Gaius says it the way he, characters: titus, marcus, publius, gaius, locations/objects: road, plain, tent, fire, city, hill, river, camp, Roman Republic, Battle of Cannae context, grounded realism, natural light, human eye-level perspective, slow zoom friendly composition, no modern objects, no fantasy, story moment: first-person immersive historical POV still, Roman Republic, character focus: Titus, location: historically accurate environment, equipment/objects: period-correct clothing and props, emotion: restrained, cinematic realism, natural light, human-scale composition, no fantasy, no modern objects, moment: \"Both flanks,\" he says. \"Their center pulled us in. We walked forward thinking we were winning. It bent. It didn't break. It pulled us in and the cavalry came all the way around the back.\" A pause. \"I could see it. For a little while, from , cinematic historical realism, immersive first-person POV, grounded sensory detail, eye-level human perspective, documentary still, no poster posing, natura",
+          "negative_prompt": "modern objects, fantasy armor, video game style, text, watermark, poster pose",
+          "status": "generated",
+          "asset_path": "assets/visual_slots/VIS003/approved.txt"
+        }
+      ]
+    },
+    {
+      "step": "scene_music",
+      "generated": 22,
+      "items": [
+        {
+          "id": "s001",
+          "title": "Before Dawn",
+          "block_ids": [
+            "b0001",
+            "b0002",
+            "b0003",
+            "b0004",
+            "b0005"
+          ],
+          "duration_seconds": 248,
+          "cue": "SCENE MUSIC ONLY, not per block. Before Dawn: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s001/approved.txt"
+        },
+        {
+          "id": "s002",
+          "title": "Near the River",
+          "block_ids": [
+            "b0006",
+            "b0007",
+            "b0008",
+            "b0009",
+            "b0010",
+            "b0011"
+          ],
+          "duration_seconds": 296,
+          "cue": "SCENE MUSIC ONLY, not per block. Near the River: river approach, slow ominous movement, wind and water bed. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s002/approved.txt"
+        },
+        {
+          "id": "s003",
+          "title": "Before Dawn",
+          "block_ids": [
+            "b0012",
+            "b0013",
+            "b0014",
+            "b0015",
+            "b0016",
+            "b0017"
+          ],
+          "duration_seconds": 139,
+          "cue": "SCENE MUSIC ONLY, not per block. Before Dawn: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s003/approved.txt"
+        },
+        {
+          "id": "s004",
+          "title": "Inside the Tent",
+          "block_ids": [
+            "b0018",
+            "b0019",
+            "b0020",
+            "b0021",
+            "b0022",
+            "b0023"
+          ],
+          "duration_seconds": 193,
+          "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s004/approved.txt"
+        },
+        {
+          "id": "s005",
+          "title": "By the Fire",
+          "block_ids": [
+            "b0024",
+            "b0025",
+            "b0026",
+            "b0027",
+            "b0028",
+            "b0029"
+          ],
+          "duration_seconds": 52,
+          "cue": "SCENE MUSIC ONLY, not per block. By the Fire: campfire memory, quiet crackle, warm but uneasy drone. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s005/approved.txt"
+        },
+        {
+          "id": "s006",
+          "title": "Inside the Tent",
+          "block_ids": [
+            "b0030",
+            "b0031",
+            "b0032",
+            "b0033",
+            "b0034",
+            "b0035"
+          ],
+          "duration_seconds": 139,
+          "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s006/approved.txt"
+        },
+        {
+          "id": "s007",
+          "title": "Inside the Tent",
+          "block_ids": [
+            "b0036",
+            "b0037",
+            "b0038",
+            "b0039",
+            "b0040",
+            "b0041"
+          ],
+          "duration_seconds": 155,
+          "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s007/approved.txt"
+        },
+        {
+          "id": "s008",
+          "title": "Before Dawn",
+          "block_ids": [
+            "b0042",
+            "b0043",
+            "b0044",
+            "b0045",
+            "b0046"
+          ],
+          "duration_seconds": 241,
+          "cue": "SCENE MUSIC ONLY, not per block. Before Dawn: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s008/approved.txt"
+        },
+        {
+          "id": "s009",
+          "title": "Inside the Tent",
+          "block_ids": [
+            "b0047",
+            "b0048",
+            "b0049",
+            "b0050",
+            "b0051",
+            "b0052"
+          ],
+          "duration_seconds": 279,
+          "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s009/approved.txt"
+        },
+        {
+          "id": "s010",
+          "title": "Near the River",
+          "block_ids": [
+            "b0053",
+            "b0054",
+            "b0055",
+            "b0056",
+            "b0057",
+            "b0058"
+          ],
+          "duration_seconds": 274,
+          "cue": "SCENE MUSIC ONLY, not per block. Near the River: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s010/approved.txt"
+        },
+        {
+          "id": "s011",
+          "title": "The man behind me is breathing on the back",
+          "block_ids": [
+            "b0059",
+            "b0060",
+            "b0061",
+            "b0062",
+            "b0063",
+            "b0064"
+          ],
+          "duration_seconds": 253,
+          "cue": "SCENE MUSIC ONLY, not per block. The man behind me is breathing on the back: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s011/approved.txt"
+        },
+        {
+          "id": "s012",
+          "title": "Battlefield",
+          "block_ids": [
+            "b0065",
+            "b0066",
+            "b0067",
+            "b0068",
+            "b0069",
+            "b0070"
+          ],
+          "duration_seconds": 163,
+          "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s012/approved.txt"
+        },
+        {
+          "id": "s013",
+          "title": "Battlefield",
+          "block_ids": [
+            "b0071",
+            "b0072",
+            "b0073",
+            "b0074",
+            "b0075",
+            "b0076"
+          ],
+          "duration_seconds": 168,
+          "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s013/approved.txt"
+        },
+        {
+          "id": "s014",
+          "title": "That was all.",
+          "block_ids": [
+            "b0077",
+            "b0078",
+            "b0079",
+            "b0080",
+            "b0081",
+            "b0082"
+          ],
+          "duration_seconds": 94,
+          "cue": "SCENE MUSIC ONLY, not per block. That was all.: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s014/approved.txt"
+        },
+        {
+          "id": "s015",
+          "title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+          "block_ids": [
+            "b0083",
+            "b0084",
+            "b0085",
+            "b0086",
+            "b0087",
+            "b0088"
+          ],
+          "duration_seconds": 75,
+          "cue": "SCENE MUSIC ONLY, not per block. \"I ran.\" \"Listen.\" Gaius says it the way he: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s015/approved.txt"
+        },
+        {
+          "id": "s016",
+          "title": "Inside the Tent",
+          "block_ids": [
+            "b0089",
+            "b0090",
+            "b0091",
+            "b0092",
+            "b0093",
+            "b0094"
+          ],
+          "duration_seconds": 73,
+          "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s016/approved.txt"
+        },
+        {
+          "id": "s017",
+          "title": "By the Fire",
+          "block_ids": [
+            "b0095",
+            "b0096",
+            "b0097",
+            "b0098",
+            "b0099",
+            "b0100"
+          ],
+          "duration_seconds": 49,
+          "cue": "SCENE MUSIC ONLY, not per block. By the Fire: campfire memory, quiet crackle, warm but uneasy drone. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s017/approved.txt"
+        },
+        {
+          "id": "s018",
+          "title": "Battlefield",
+          "block_ids": [
+            "b0101",
+            "b0102",
+            "b0103",
+            "b0104",
+            "b0105",
+            "b0106"
+          ],
+          "duration_seconds": 252,
+          "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s018/approved.txt"
+        },
+        {
+          "id": "s019",
+          "title": "On the Road",
+          "block_ids": [
+            "b0107",
+            "b0108",
+            "b0109",
+            "b0110",
+            "b0111",
+            "b0112"
+          ],
+          "duration_seconds": 77,
+          "cue": "SCENE MUSIC ONLY, not per block. On the Road: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s019/approved.txt"
+        },
+        {
+          "id": "s020",
+          "title": "By the Fire",
+          "block_ids": [
+            "b0113",
+            "b0114",
+            "b0115",
+            "b0116",
+            "b0117",
+            "b0118"
+          ],
+          "duration_seconds": 117,
+          "cue": "SCENE MUSIC ONLY, not per block. By the Fire: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s020/approved.txt"
+        },
+        {
+          "id": "s021",
+          "title": "Inside the Tent",
+          "block_ids": [
+            "b0119",
+            "b0120",
+            "b0121",
+            "b0122",
+            "b0123",
+            "b0124"
+          ],
+          "duration_seconds": 260,
+          "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s021/approved.txt"
+        },
+        {
+          "id": "s022",
+          "title": "Battlefield",
+          "block_ids": [
+            "b0125"
+          ],
+          "duration_seconds": 24,
+          "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+          "status": "generated",
+          "asset_path": "assets/scene_music/s022/approved.txt"
+        }
+      ]
+    }
+  ],
+  "before": {
+    "total_blocks": 125,
+    "voice_generated": 1,
+    "image_blocks_covered": 5,
+    "music_blocks_covered": 5,
+    "visual_slot_plan_exists": true,
+    "scene_music_plan_exists": true
+  },
+  "policy": {
+    "voice": "block_based",
+    "images": "visual_slot_based_not_per_block",
+    "music": "scene_based_not_per_block",
+    "paid_ai": "voice_only_when_provider_not_mock"
+  },
+  "after": {
+    "total_blocks": 125,
+    "voice_generated": 1,
+    "image_blocks_covered": 125,
+    "music_blocks_covered": 125,
+    "visual_slot_plan_exists": true,
+    "scene_music_plan_exists": true
+  },
+  "finished": "2026-06-28T21:46:11"
+}

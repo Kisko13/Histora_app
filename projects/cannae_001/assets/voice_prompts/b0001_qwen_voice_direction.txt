@@ -1,0 +1,21 @@
+You are preparing voice direction for historical first-person narration.
+Do not rewrite the story. Return concise voice direction only.
+Character: marcus
+Voice state: narrator_slow
+Style: deep restrained male narrator, slow immersive delivery, tired human realism.
+Text:
+The flies always found us before dawn.
+
+Long before Hannibal.
+
+Long before the screaming.
+
+Long before Rome lost more sons than anyone believed possible in a single afternoon on a flat and unremarkable plain in the south of Italy.
+
+The flies always found us first.
+
+Return:
+- delivery notes
+- pacing notes
+- emotional pressure
+- pronunciation warnings if any

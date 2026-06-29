@@ -1,0 +1,1331 @@
+{
+  "version": "v31_asset_library",
+  "created_at": "2026-06-29T13:03:22",
+  "policy": {
+    "voice": "block_based",
+    "visuals": "visual_slot_based_10_to_20_total_images",
+    "music": "scene_based",
+    "placeholders": "txt placeholders enable planning/preview but do not represent final media"
+  },
+  "voice": {
+    "total_blocks": 125,
+    "approved": 1,
+    "items": [
+      {
+        "block_id": "b0001",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0002",
+        "character": "marcus",
+        "voice_path": "assets/audio_final/b0002.txt",
+        "approved": true
+      },
+      {
+        "block_id": "b0003",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0004",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0005",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0006",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0007",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0008",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0009",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0010",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0011",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0012",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0013",
+        "character": "gaius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0014",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0015",
+        "character": "gaius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0016",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0017",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0018",
+        "character": "quintus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0019",
+        "character": "decimus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0020",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0021",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0022",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0023",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0024",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0025",
+        "character": "gaius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0026",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0027",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0028",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0029",
+        "character": "publius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0030",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0031",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0032",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0033",
+        "character": "decimus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0034",
+        "character": "flavius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0035",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0036",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0037",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0038",
+        "character": "publius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0039",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0040",
+        "character": "publius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0041",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0042",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0043",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0044",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0045",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0046",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0047",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0048",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0049",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0050",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0051",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0052",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0053",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0054",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0055",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0056",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0057",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0058",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0059",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0060",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0061",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0062",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0063",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0064",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0065",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0066",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0067",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0068",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0069",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0070",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0071",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0072",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0073",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0074",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0075",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0076",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0077",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0078",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0079",
+        "character": "publius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0080",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0081",
+        "character": "publius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0082",
+        "character": "gaius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0083",
+        "character": "publius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0084",
+        "character": "gaius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0085",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0086",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0087",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0088",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0089",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0090",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0091",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0092",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0093",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0094",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0095",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0096",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0097",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0098",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0099",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0100",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0101",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0102",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0103",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0104",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0105",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0106",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0107",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0108",
+        "character": "quintus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0109",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0110",
+        "character": "quintus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0111",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0112",
+        "character": "publius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0113",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0114",
+        "character": "publius",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0115",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0116",
+        "character": "titus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0117",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0118",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0119",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0120",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0121",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0122",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0123",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0124",
+        "character": "marcus",
+        "voice_path": "",
+        "approved": false
+      },
+      {
+        "block_id": "b0125",
+        "character": "narrator",
+        "voice_path": "",
+        "approved": false
+      }
+    ]
+  },
+  "visual_slots": {
+    "total": 3,
+    "approved_or_placeholder": 3,
+    "asset_root": "assets/visual_slots",
+    "slots": [
+      {
+        "slot_id": "VIS001",
+        "title": "Before Dawn",
+        "status": "approved",
+        "duration_seconds": 1222,
+        "start_block": "b0001",
+        "end_block": "b0041",
+        "block_ids": [
+          "b0001",
+          "b0002",
+          "b0003",
+          "b0004",
+          "b0005",
+          "b0006",
+          "b0007",
+          "b0008",
+          "b0009",
+          "b0010",
+          "b0011",
+          "b0012",
+          "b0013",
+          "b0014",
+          "b0015",
+          "b0016",
+          "b0017",
+          "b0018",
+          "b0019",
+          "b0020",
+          "b0021",
+          "b0022",
+          "b0023",
+          "b0024",
+          "b0025",
+          "b0026",
+          "b0027",
+          "b0028",
+          "b0029",
+          "b0030",
+          "b0031",
+          "b0032",
+          "b0033",
+          "b0034",
+          "b0035",
+          "b0036",
+          "b0037",
+          "b0038",
+          "b0039",
+          "b0040",
+          "b0041"
+        ],
+        "scene_titles": [
+          "Before Dawn",
+          "Near the River",
+          "Inside the Tent",
+          "By the Fire"
+        ],
+        "characters": [
+          "marcus",
+          "gaius",
+          "quintus",
+          "decimus",
+          "titus",
+          "publius",
+          "flavius"
+        ],
+        "prompt": "cinematic historical POV still, listening-first YouTube documentary, visual slot 1, scenes: Before Dawn, Near the River, Inside the Tent, characters: marcus, gaius, quintus, decimus, locations/objects: plain, road, camp, tent, river, fire, hill, city, Roman Republic, Battle of Cannae context, grounded realism, natural light, human eye-level perspective, slow zoom friendly composition, no modern objects, no fantasy, story moment: first-person immersive historical POV still, Roman Republic, character focus: Marcus, location: plain, equipment/objects: period-correct clothing and props, emotion: battle tension, cinematic realism, natural light, human-scale composition, no fantasy, no modern objects, moment: The flies always found us before dawn. Long before Hannibal. Long before the screaming. Long before Rome lost more sons than anyone believed possible in a single afternoon on a flat and unremarkable plain in the south of Italy. The flies al, cinematic historical realism, immersive first-person POV, grounded sensory detail, eye-level human perspective, documentary still, no poster posing, natural practical light based",
+        "negative_prompt": "modern objects, fantasy armor, video game style, text, watermark, poster pose",
+        "asset_path": "assets/visual_slots/VIS001/approved.jpg"
+      },
+      {
+        "slot_id": "VIS002",
+        "title": "Inside the Tent",
+        "status": "approved",
+        "duration_seconds": 1210,
+        "start_block": "b0042",
+        "end_block": "b0070",
+        "block_ids": [
+          "b0042",
+          "b0043",
+          "b0044",
+          "b0045",
+          "b0046",
+          "b0047",
+          "b0048",
+          "b0049",
+          "b0050",
+          "b0051",
+          "b0052",
+          "b0053",
+          "b0054",
+          "b0055",
+          "b0056",
+          "b0057",
+          "b0058",
+          "b0059",
+          "b0060",
+          "b0061",
+          "b0062",
+          "b0063",
+          "b0064",
+          "b0065",
+          "b0066",
+          "b0067",
+          "b0068",
+          "b0069",
+          "b0070"
+        ],
+        "scene_titles": [
+          "Before Dawn",
+          "Inside the Tent",
+          "Near the River",
+          "The man behind me is breathing on the back",
+          "Battlefield"
+        ],
+        "characters": [
+          "marcus",
+          "titus"
+        ],
+        "prompt": "cinematic historical POV still, listening-first YouTube documentary, visual slot 2, scenes: Before Dawn, Inside the Tent, Near the River, characters: marcus, titus, locations/objects: tent, road, camp, plain, hill, river, helmet, standard, Roman Republic, Battle of Cannae context, grounded realism, natural light, human eye-level perspective, slow zoom friendly composition, no modern objects, no fantasy, story moment: first-person immersive historical POV still, Roman Republic, character focus: Marcus, location: tent, equipment/objects: period-correct clothing and props, emotion: dread, cinematic realism, natural light, human-scale composition, no fantasy, no modern objects, moment: I lie down and stare at the tent ceiling in the dark and hold his words in my head and think about my own mother, and her hand on my face in the dark, and the thing I never said. Some things don't need saying. I fall asleep still thinking i, cinematic historical realism, immersive first-person POV, grounded sensory detail, eye-level human perspective, documentary still, no poster posing, natural practical light based on script",
+        "negative_prompt": "modern objects, fantasy armor, video game style, text, watermark, poster pose",
+        "asset_path": "assets/visual_slots/VIS002/approved.txt"
+      },
+      {
+        "slot_id": "VIS003",
+        "title": "Battlefield",
+        "status": "approved",
+        "duration_seconds": 1189,
+        "start_block": "b0071",
+        "end_block": "b0125",
+        "block_ids": [
+          "b0071",
+          "b0072",
+          "b0073",
+          "b0074",
+          "b0075",
+          "b0076",
+          "b0077",
+          "b0078",
+          "b0079",
+          "b0080",
+          "b0081",
+          "b0082",
+          "b0083",
+          "b0084",
+          "b0085",
+          "b0086",
+          "b0087",
+          "b0088",
+          "b0089",
+          "b0090",
+          "b0091",
+          "b0092",
+          "b0093",
+          "b0094",
+          "b0095",
+          "b0096",
+          "b0097",
+          "b0098",
+          "b0099",
+          "b0100",
+          "b0101",
+          "b0102",
+          "b0103",
+          "b0104",
+          "b0105",
+          "b0106",
+          "b0107",
+          "b0108",
+          "b0109",
+          "b0110",
+          "b0111",
+          "b0112",
+          "b0113",
+          "b0114",
+          "b0115",
+          "b0116",
+          "b0117",
+          "b0118",
+          "b0119",
+          "b0120",
+          "b0121",
+          "b0122",
+          "b0123",
+          "b0124",
+          "b0125"
+        ],
+        "scene_titles": [
+          "Battlefield",
+          "That was all.",
+          "\"I ran.\" \"Listen.\" Gaius says it the way he",
+          "Inside the Tent",
+          "By the Fire",
+          "On the Road"
+        ],
+        "characters": [
+          "titus",
+          "marcus",
+          "publius",
+          "gaius",
+          "quintus",
+          "narrator"
+        ],
+        "prompt": "cinematic historical POV still, listening-first YouTube documentary, visual slot 3, scenes: Battlefield, That was all., \"I ran.\" \"Listen.\" Gaius says it the way he, characters: titus, marcus, publius, gaius, locations/objects: road, plain, tent, fire, city, hill, river, camp, Roman Republic, Battle of Cannae context, grounded realism, natural light, human eye-level perspective, slow zoom friendly composition, no modern objects, no fantasy, story moment: first-person immersive historical POV still, Roman Republic, character focus: Titus, location: historically accurate environment, equipment/objects: period-correct clothing and props, emotion: restrained, cinematic realism, natural light, human-scale composition, no fantasy, no modern objects, moment: \"Both flanks,\" he says. \"Their center pulled us in. We walked forward thinking we were winning. It bent. It didn't break. It pulled us in and the cavalry came all the way around the back.\" A pause. \"I could see it. For a little while, from , cinematic historical realism, immersive first-person POV, grounded sensory detail, eye-level human perspective, documentary still, no poster posing, natura",
+        "negative_prompt": "modern objects, fantasy armor, video game style, text, watermark, poster pose",
+        "asset_path": "assets/visual_slots/VIS003/approved.txt"
+      }
+    ]
+  },
+  "scene_music": {
+    "total": 22,
+    "approved_or_placeholder": 22,
+    "asset_root": "assets/scene_music",
+    "scenes": [
+      {
+        "scene_id": "s001",
+        "title": "Before Dawn",
+        "status": "approved",
+        "duration_seconds": 248,
+        "block_ids": [
+          "b0001",
+          "b0002",
+          "b0003",
+          "b0004",
+          "b0005"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Before Dawn: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s001/approved.txt"
+      },
+      {
+        "scene_id": "s002",
+        "title": "Near the River",
+        "status": "approved",
+        "duration_seconds": 296,
+        "block_ids": [
+          "b0006",
+          "b0007",
+          "b0008",
+          "b0009",
+          "b0010",
+          "b0011"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Near the River: river approach, slow ominous movement, wind and water bed. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s002/approved.txt"
+      },
+      {
+        "scene_id": "s003",
+        "title": "Before Dawn",
+        "status": "approved",
+        "duration_seconds": 139,
+        "block_ids": [
+          "b0012",
+          "b0013",
+          "b0014",
+          "b0015",
+          "b0016",
+          "b0017"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Before Dawn: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s003/approved.txt"
+      },
+      {
+        "scene_id": "s004",
+        "title": "Inside the Tent",
+        "status": "approved",
+        "duration_seconds": 193,
+        "block_ids": [
+          "b0018",
+          "b0019",
+          "b0020",
+          "b0021",
+          "b0022",
+          "b0023"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s004/approved.txt"
+      },
+      {
+        "scene_id": "s005",
+        "title": "By the Fire",
+        "status": "approved",
+        "duration_seconds": 52,
+        "block_ids": [
+          "b0024",
+          "b0025",
+          "b0026",
+          "b0027",
+          "b0028",
+          "b0029"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. By the Fire: campfire memory, quiet crackle, warm but uneasy drone. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s005/approved.txt"
+      },
+      {
+        "scene_id": "s006",
+        "title": "Inside the Tent",
+        "status": "approved",
+        "duration_seconds": 139,
+        "block_ids": [
+          "b0030",
+          "b0031",
+          "b0032",
+          "b0033",
+          "b0034",
+          "b0035"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s006/approved.txt"
+      },
+      {
+        "scene_id": "s007",
+        "title": "Inside the Tent",
+        "status": "approved",
+        "duration_seconds": 155,
+        "block_ids": [
+          "b0036",
+          "b0037",
+          "b0038",
+          "b0039",
+          "b0040",
+          "b0041"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s007/approved.txt"
+      },
+      {
+        "scene_id": "s008",
+        "title": "Before Dawn",
+        "status": "approved",
+        "duration_seconds": 241,
+        "block_ids": [
+          "b0042",
+          "b0043",
+          "b0044",
+          "b0045",
+          "b0046"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Before Dawn: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s008/approved.txt"
+      },
+      {
+        "scene_id": "s009",
+        "title": "Inside the Tent",
+        "status": "approved",
+        "duration_seconds": 279,
+        "block_ids": [
+          "b0047",
+          "b0048",
+          "b0049",
+          "b0050",
+          "b0051",
+          "b0052"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s009/approved.txt"
+      },
+      {
+        "scene_id": "s010",
+        "title": "Near the River",
+        "status": "approved",
+        "duration_seconds": 274,
+        "block_ids": [
+          "b0053",
+          "b0054",
+          "b0055",
+          "b0056",
+          "b0057",
+          "b0058"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Near the River: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s010/approved.txt"
+      },
+      {
+        "scene_id": "s011",
+        "title": "The man behind me is breathing on the back",
+        "status": "approved",
+        "duration_seconds": 253,
+        "block_ids": [
+          "b0059",
+          "b0060",
+          "b0061",
+          "b0062",
+          "b0063",
+          "b0064"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. The man behind me is breathing on the back: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s011/approved.txt"
+      },
+      {
+        "scene_id": "s012",
+        "title": "Battlefield",
+        "status": "approved",
+        "duration_seconds": 163,
+        "block_ids": [
+          "b0065",
+          "b0066",
+          "b0067",
+          "b0068",
+          "b0069",
+          "b0070"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s012/approved.txt"
+      },
+      {
+        "scene_id": "s013",
+        "title": "Battlefield",
+        "status": "approved",
+        "duration_seconds": 168,
+        "block_ids": [
+          "b0071",
+          "b0072",
+          "b0073",
+          "b0074",
+          "b0075",
+          "b0076"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s013/approved.txt"
+      },
+      {
+        "scene_id": "s014",
+        "title": "That was all.",
+        "status": "approved",
+        "duration_seconds": 94,
+        "block_ids": [
+          "b0077",
+          "b0078",
+          "b0079",
+          "b0080",
+          "b0081",
+          "b0082"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. That was all.: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s014/approved.txt"
+      },
+      {
+        "scene_id": "s015",
+        "title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+        "status": "approved",
+        "duration_seconds": 75,
+        "block_ids": [
+          "b0083",
+          "b0084",
+          "b0085",
+          "b0086",
+          "b0087",
+          "b0088"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. \"I ran.\" \"Listen.\" Gaius says it the way he: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s015/approved.txt"
+      },
+      {
+        "scene_id": "s016",
+        "title": "Inside the Tent",
+        "status": "approved",
+        "duration_seconds": 73,
+        "block_ids": [
+          "b0089",
+          "b0090",
+          "b0091",
+          "b0092",
+          "b0093",
+          "b0094"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s016/approved.txt"
+      },
+      {
+        "scene_id": "s017",
+        "title": "By the Fire",
+        "status": "approved",
+        "duration_seconds": 49,
+        "block_ids": [
+          "b0095",
+          "b0096",
+          "b0097",
+          "b0098",
+          "b0099",
+          "b0100"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. By the Fire: campfire memory, quiet crackle, warm but uneasy drone. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s017/approved.txt"
+      },
+      {
+        "scene_id": "s018",
+        "title": "Battlefield",
+        "status": "approved",
+        "duration_seconds": 252,
+        "block_ids": [
+          "b0101",
+          "b0102",
+          "b0103",
+          "b0104",
+          "b0105",
+          "b0106"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s018/approved.txt"
+      },
+      {
+        "scene_id": "s019",
+        "title": "On the Road",
+        "status": "approved",
+        "duration_seconds": 77,
+        "block_ids": [
+          "b0107",
+          "b0108",
+          "b0109",
+          "b0110",
+          "b0111",
+          "b0112"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. On the Road: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s019/approved.txt"
+      },
+      {
+        "scene_id": "s020",
+        "title": "By the Fire",
+        "status": "approved",
+        "duration_seconds": 117,
+        "block_ids": [
+          "b0113",
+          "b0114",
+          "b0115",
+          "b0116",
+          "b0117",
+          "b0118"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. By the Fire: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s020/approved.txt"
+      },
+      {
+        "scene_id": "s021",
+        "title": "Inside the Tent",
+        "status": "approved",
+        "duration_seconds": 260,
+        "block_ids": [
+          "b0119",
+          "b0120",
+          "b0121",
+          "b0122",
+          "b0123",
+          "b0124"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s021/approved.txt"
+      },
+      {
+        "scene_id": "s022",
+        "title": "Battlefield",
+        "status": "approved",
+        "duration_seconds": 24,
+        "block_ids": [
+          "b0125"
+        ],
+        "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+        "asset_path": "assets/scene_music/s022/approved.txt"
+      }
+    ]
+  }
+}

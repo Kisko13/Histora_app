@@ -2,8 +2,8 @@ from pathlib import Path
 
 
 AUDIO_EXTS = [".wav", ".mp3", ".m4a", ".txt", ""]
-IMAGE_EXTS = [".png", ".jpg", ".jpeg", ".webp"]
-MUSIC_EXTS = [".wav", ".mp3", ".m4a", ".aac", ".flac", ".ogg"]
+IMAGE_EXTS = [".png", ".jpg", ".jpeg", ".webp", ".txt"]
+MUSIC_EXTS = [".wav", ".mp3", ".m4a", ".aac", ".flac", ".ogg", ".txt"]
 
 
 def _exists_any(paths):

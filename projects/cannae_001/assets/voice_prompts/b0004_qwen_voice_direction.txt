@@ -1,0 +1,19 @@
+You are preparing voice direction for historical first-person narration.
+Do not rewrite the story. Return concise voice direction only.
+Character: marcus
+Voice state: narrator_slow
+Style: deep restrained male narrator, slow immersive delivery, tired human realism.
+Text:
+Almost none of us believed we could lose.
+
+---
+
+The tent I shared had seven other men in it.
+
+There was Gaius — big Gaius, as we called him, not to distinguish him from another Gaius because there was no other Gaius in our eight, but because *big* was simply the first and most accurate word for him. He had arms like a butcher and a face like a man who has spent a great deal of time outdoors considering practical problems. He ate more than any man I have ever known. Not greedily — he was not greedy about anything — but with the steady mechanical thoroughness of a mill grinding, until the task was done.
+
+Return:
+- delivery notes
+- pacing notes
+- emotional pressure
+- pronunciation warnings if any

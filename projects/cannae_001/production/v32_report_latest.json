@@ -1,0 +1,10 @@
+{
+  "version": "v32_render_package_report",
+  "built_at": "2026-06-28T22:51:30",
+  "manifest": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\exports\\v32_render\\v32_render_manifest.json",
+  "csv": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\exports\\v32_render\\v32_render_jobs.csv",
+  "readme": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\exports\\v32_render\\README_V32_RENDER.md",
+  "total_blocks": 125,
+  "runtime_minutes": 60.35,
+  "render_dir": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\exports\\v32_render"
+}

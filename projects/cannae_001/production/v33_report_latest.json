@@ -1,0 +1,15 @@
+{
+  "version": "v33_render_package_report",
+  "built_at": "2026-06-29T13:03:23",
+  "manifest": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\exports\\v33_render\\v33_render_manifest.json",
+  "csv": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\exports\\v33_render\\v33_render_jobs.csv",
+  "readme": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\exports\\v33_render\\README_V33_RENDER.md",
+  "total_blocks": 125,
+  "coverage": {
+    "real_voice_blocks": 0,
+    "real_visual_blocks": 41,
+    "real_music_blocks": 0,
+    "final_ready_blocks": 0
+  },
+  "render_dir": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001\\exports\\v33_render"
+}

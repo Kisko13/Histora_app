@@ -1,0 +1,8 @@
+MOCK SCENE MUSIC PLACEHOLDER — FREE/LOCAL
+
+SCENE: s019
+TITLE: On the Road
+DURATION: 77 sec
+
+CUE:
+SCENE MUSIC ONLY, not per block. On the Road: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.

@@ -1,0 +1,8 @@
+MOCK SCENE MUSIC PLACEHOLDER — FREE/LOCAL
+
+SCENE: s022
+TITLE: Battlefield
+DURATION: 24 sec
+
+CUE:
+SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.

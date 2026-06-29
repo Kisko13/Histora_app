@@ -1,0 +1,8 @@
+MOCK SCENE MUSIC PLACEHOLDER — FREE/LOCAL
+
+SCENE: s002
+TITLE: Near the River
+DURATION: 296 sec
+
+CUE:
+SCENE MUSIC ONLY, not per block. Near the River: river approach, slow ominous movement, wind and water bed. Keep low under narration, loopable, no vocals.

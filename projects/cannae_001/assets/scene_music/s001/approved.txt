@@ -1,0 +1,8 @@
+MOCK SCENE MUSIC PLACEHOLDER — FREE/LOCAL
+
+SCENE: s001
+TITLE: Before Dawn
+DURATION: 248 sec
+
+CUE:
+SCENE MUSIC ONLY, not per block. Before Dawn: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.

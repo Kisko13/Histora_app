@@ -1,0 +1,8 @@
+MOCK SCENE MUSIC PLACEHOLDER — FREE/LOCAL
+
+SCENE: s020
+TITLE: By the Fire
+DURATION: 117 sec
+
+CUE:
+SCENE MUSIC ONLY, not per block. By the Fire: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.

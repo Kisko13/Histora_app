@@ -1,0 +1,58 @@
+{
+  "marcus": {
+    "name": "marcus",
+    "voice_provider": "mock",
+    "voice_preset": "narrator_slow",
+    "delivery": "Slow immersive historical POV narration; restrained, tired, human.",
+    "image_continuity": "Keep character visually consistent across all generated images."
+  },
+  "gaius": {
+    "name": "gaius",
+    "voice_provider": "mock",
+    "voice_preset": "narrator_slow",
+    "delivery": "Slow immersive historical POV narration; restrained, tired, human.",
+    "image_continuity": "Keep character visually consistent across all generated images."
+  },
+  "quintus": {
+    "name": "quintus",
+    "voice_provider": "mock",
+    "voice_preset": "narrator_slow",
+    "delivery": "Slow immersive historical POV narration; restrained, tired, human.",
+    "image_continuity": "Keep character visually consistent across all generated images."
+  },
+  "decimus": {
+    "name": "decimus",
+    "voice_provider": "mock",
+    "voice_preset": "narrator_slow",
+    "delivery": "Slow immersive historical POV narration; restrained, tired, human.",
+    "image_continuity": "Keep character visually consistent across all generated images."
+  },
+  "titus": {
+    "name": "titus",
+    "voice_provider": "mock",
+    "voice_preset": "narrator_slow",
+    "delivery": "Slow immersive historical POV narration; restrained, tired, human.",
+    "image_continuity": "Keep character visually consistent across all generated images."
+  },
+  "publius": {
+    "name": "publius",
+    "voice_provider": "mock",
+    "voice_preset": "narrator_slow",
+    "delivery": "Slow immersive historical POV narration; restrained, tired, human.",
+    "image_continuity": "Keep character visually consistent across all generated images."
+  },
+  "flavius": {
+    "name": "flavius",
+    "voice_provider": "mock",
+    "voice_preset": "narrator_slow",
+    "delivery": "Slow immersive historical POV narration; restrained, tired, human.",
+    "image_continuity": "Keep character visually consistent across all generated images."
+  },
+  "narrator": {
+    "name": "narrator",
+    "voice_provider": "mock",
+    "voice_preset": "narrator_slow",
+    "delivery": "Slow immersive historical POV narration; restrained, tired, human.",
+    "image_continuity": "Keep character visually consistent across all generated images."
+  }
+}

@@ -1,0 +1,8 @@
+MOCK SCENE MUSIC PLACEHOLDER — FREE/LOCAL
+
+SCENE: s011
+TITLE: The man behind me is breathing on the back
+DURATION: 253 sec
+
+CUE:
+SCENE MUSIC ONLY, not per block. The man behind me is breathing on the back: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.

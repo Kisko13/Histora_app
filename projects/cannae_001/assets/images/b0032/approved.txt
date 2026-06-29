@@ -1,0 +1,5 @@
+V31 VISUAL SLOT POINTER — this block reuses an episode visual slot.
+
+BLOCK: b0032
+SLOT: VIS001
+SLOT_ASSET: assets/visual_slots/VIS001/approved.jpg

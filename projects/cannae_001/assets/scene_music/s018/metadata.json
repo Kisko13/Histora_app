@@ -1,0 +1,16 @@
+{
+  "scene_id": "s018",
+  "title": "Battlefield",
+  "status": "approved",
+  "duration_seconds": 252,
+  "block_ids": [
+    "b0101",
+    "b0102",
+    "b0103",
+    "b0104",
+    "b0105",
+    "b0106"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s018/approved.txt"
+}

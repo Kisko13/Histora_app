@@ -1,0 +1,16 @@
+{
+  "scene_id": "s011",
+  "title": "The man behind me is breathing on the back",
+  "status": "approved",
+  "duration_seconds": 253,
+  "block_ids": [
+    "b0059",
+    "b0060",
+    "b0061",
+    "b0062",
+    "b0063",
+    "b0064"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. The man behind me is breathing on the back: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s011/approved.txt"
+}

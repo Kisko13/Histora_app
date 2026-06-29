@@ -1,0 +1,2882 @@
+{
+  "version": "v29_timeline",
+  "policy": {
+    "voice": "block_based",
+    "visuals": "visual_slot_based",
+    "music": "scene_based",
+    "assembly": "timeline_driven_resume_safe"
+  },
+  "runtime_seconds": 3621,
+  "runtime_minutes": 60.35,
+  "blocks": [
+    {
+      "block_id": "b0001",
+      "scene_id": "s001",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 0,
+      "end_seconds": 20,
+      "duration_seconds": 20,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s001",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s001/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0002",
+      "scene_id": "s001",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 20,
+      "end_seconds": 74,
+      "duration_seconds": 54,
+      "voice_path": "assets/audio_final/b0002.txt",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s001",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s001/approved.txt",
+      "ready": true,
+      "missing": []
+    },
+    {
+      "block_id": "b0003",
+      "scene_id": "s001",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 74,
+      "end_seconds": 134,
+      "duration_seconds": 60,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s001",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s001/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0004",
+      "scene_id": "s001",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 134,
+      "end_seconds": 188,
+      "duration_seconds": 54,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s001",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s001/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0005",
+      "scene_id": "s001",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 188,
+      "end_seconds": 248,
+      "duration_seconds": 60,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s001",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s001/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0006",
+      "scene_id": "s002",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 248,
+      "end_seconds": 307,
+      "duration_seconds": 59,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s002",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s002/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0007",
+      "scene_id": "s002",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 307,
+      "end_seconds": 353,
+      "duration_seconds": 46,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s002",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s002/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0008",
+      "scene_id": "s002",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 353,
+      "end_seconds": 403,
+      "duration_seconds": 50,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s002",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s002/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0009",
+      "scene_id": "s002",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 403,
+      "end_seconds": 445,
+      "duration_seconds": 42,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s002",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s002/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0010",
+      "scene_id": "s002",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 445,
+      "end_seconds": 497,
+      "duration_seconds": 52,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s002",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s002/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0011",
+      "scene_id": "s002",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 497,
+      "end_seconds": 544,
+      "duration_seconds": 47,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s002",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s002/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0012",
+      "scene_id": "s003",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 544,
+      "end_seconds": 600,
+      "duration_seconds": 56,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s003",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s003/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0013",
+      "scene_id": "s003",
+      "scene_title": "Before Dawn",
+      "character": "gaius",
+      "start_seconds": 600,
+      "end_seconds": 606,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s003",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s003/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0014",
+      "scene_id": "s003",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 606,
+      "end_seconds": 612,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s003",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s003/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0015",
+      "scene_id": "s003",
+      "scene_title": "Before Dawn",
+      "character": "gaius",
+      "start_seconds": 612,
+      "end_seconds": 618,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s003",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s003/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0016",
+      "scene_id": "s003",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 618,
+      "end_seconds": 653,
+      "duration_seconds": 35,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s003",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s003/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0017",
+      "scene_id": "s003",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 653,
+      "end_seconds": 683,
+      "duration_seconds": 30,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s003",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s003/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0018",
+      "scene_id": "s004",
+      "scene_title": "Inside the Tent",
+      "character": "quintus",
+      "start_seconds": 683,
+      "end_seconds": 689,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s004",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s004/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0019",
+      "scene_id": "s004",
+      "scene_title": "Inside the Tent",
+      "character": "decimus",
+      "start_seconds": 689,
+      "end_seconds": 695,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s004",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s004/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0020",
+      "scene_id": "s004",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 695,
+      "end_seconds": 755,
+      "duration_seconds": 60,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s004",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s004/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0021",
+      "scene_id": "s004",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 755,
+      "end_seconds": 811,
+      "duration_seconds": 56,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s004",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s004/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0022",
+      "scene_id": "s004",
+      "scene_title": "Inside the Tent",
+      "character": "titus",
+      "start_seconds": 811,
+      "end_seconds": 817,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s004",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s004/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0023",
+      "scene_id": "s004",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 817,
+      "end_seconds": 876,
+      "duration_seconds": 59,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s004",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s004/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0024",
+      "scene_id": "s005",
+      "scene_title": "By the Fire",
+      "character": "marcus",
+      "start_seconds": 876,
+      "end_seconds": 897,
+      "duration_seconds": 21,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s005",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s005/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0025",
+      "scene_id": "s005",
+      "scene_title": "By the Fire",
+      "character": "gaius",
+      "start_seconds": 897,
+      "end_seconds": 903,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s005",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s005/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0026",
+      "scene_id": "s005",
+      "scene_title": "By the Fire",
+      "character": "titus",
+      "start_seconds": 903,
+      "end_seconds": 909,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s005",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s005/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0027",
+      "scene_id": "s005",
+      "scene_title": "By the Fire",
+      "character": "marcus",
+      "start_seconds": 909,
+      "end_seconds": 915,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s005",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s005/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0028",
+      "scene_id": "s005",
+      "scene_title": "By the Fire",
+      "character": "titus",
+      "start_seconds": 915,
+      "end_seconds": 922,
+      "duration_seconds": 7,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s005",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s005/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0029",
+      "scene_id": "s005",
+      "scene_title": "By the Fire",
+      "character": "publius",
+      "start_seconds": 922,
+      "end_seconds": 928,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s005",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s005/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0030",
+      "scene_id": "s006",
+      "scene_title": "Inside the Tent",
+      "character": "titus",
+      "start_seconds": 928,
+      "end_seconds": 934,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s006",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s006/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0031",
+      "scene_id": "s006",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 934,
+      "end_seconds": 994,
+      "duration_seconds": 60,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s006",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s006/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0032",
+      "scene_id": "s006",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 994,
+      "end_seconds": 1003,
+      "duration_seconds": 9,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s006",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s006/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0033",
+      "scene_id": "s006",
+      "scene_title": "Inside the Tent",
+      "character": "decimus",
+      "start_seconds": 1003,
+      "end_seconds": 1009,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s006",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s006/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0034",
+      "scene_id": "s006",
+      "scene_title": "Inside the Tent",
+      "character": "flavius",
+      "start_seconds": 1009,
+      "end_seconds": 1015,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s006",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s006/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0035",
+      "scene_id": "s006",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 1015,
+      "end_seconds": 1067,
+      "duration_seconds": 52,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s006",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s006/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0036",
+      "scene_id": "s007",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 1067,
+      "end_seconds": 1124,
+      "duration_seconds": 57,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s007",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s007/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0037",
+      "scene_id": "s007",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 1124,
+      "end_seconds": 1157,
+      "duration_seconds": 33,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s007",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s007/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0038",
+      "scene_id": "s007",
+      "scene_title": "Inside the Tent",
+      "character": "publius",
+      "start_seconds": 1157,
+      "end_seconds": 1163,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s007",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s007/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0039",
+      "scene_id": "s007",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 1163,
+      "end_seconds": 1169,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s007",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s007/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0040",
+      "scene_id": "s007",
+      "scene_title": "Inside the Tent",
+      "character": "publius",
+      "start_seconds": 1169,
+      "end_seconds": 1175,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s007",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s007/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0041",
+      "scene_id": "s007",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 1175,
+      "end_seconds": 1222,
+      "duration_seconds": 47,
+      "voice_path": "",
+      "visual_slot_id": "VIS001",
+      "visual_title": "Before Dawn",
+      "visual_path": "assets/visual_slots/VIS001/approved.jpg",
+      "scene_music_id": "s007",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s007/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0042",
+      "scene_id": "s008",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 1222,
+      "end_seconds": 1246,
+      "duration_seconds": 24,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s008",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s008/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0043",
+      "scene_id": "s008",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 1246,
+      "end_seconds": 1306,
+      "duration_seconds": 60,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s008",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s008/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0044",
+      "scene_id": "s008",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 1306,
+      "end_seconds": 1366,
+      "duration_seconds": 60,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s008",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s008/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0045",
+      "scene_id": "s008",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 1366,
+      "end_seconds": 1419,
+      "duration_seconds": 53,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s008",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s008/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0046",
+      "scene_id": "s008",
+      "scene_title": "Before Dawn",
+      "character": "marcus",
+      "start_seconds": 1419,
+      "end_seconds": 1463,
+      "duration_seconds": 44,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s008",
+      "scene_music_title": "Before Dawn",
+      "scene_music_path": "assets/scene_music/s008/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0047",
+      "scene_id": "s009",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 1463,
+      "end_seconds": 1523,
+      "duration_seconds": 60,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s009",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s009/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0048",
+      "scene_id": "s009",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 1523,
+      "end_seconds": 1576,
+      "duration_seconds": 53,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s009",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s009/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0049",
+      "scene_id": "s009",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 1576,
+      "end_seconds": 1622,
+      "duration_seconds": 46,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s009",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s009/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0050",
+      "scene_id": "s009",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 1622,
+      "end_seconds": 1669,
+      "duration_seconds": 47,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s009",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s009/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0051",
+      "scene_id": "s009",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 1669,
+      "end_seconds": 1703,
+      "duration_seconds": 34,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s009",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s009/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0052",
+      "scene_id": "s009",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 1703,
+      "end_seconds": 1742,
+      "duration_seconds": 39,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s009",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s009/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0053",
+      "scene_id": "s010",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 1742,
+      "end_seconds": 1776,
+      "duration_seconds": 34,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s010",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s010/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0054",
+      "scene_id": "s010",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 1776,
+      "end_seconds": 1830,
+      "duration_seconds": 54,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s010",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s010/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0055",
+      "scene_id": "s010",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 1830,
+      "end_seconds": 1857,
+      "duration_seconds": 27,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s010",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s010/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0056",
+      "scene_id": "s010",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 1857,
+      "end_seconds": 1917,
+      "duration_seconds": 60,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s010",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s010/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0057",
+      "scene_id": "s010",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 1917,
+      "end_seconds": 1967,
+      "duration_seconds": 50,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s010",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s010/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0058",
+      "scene_id": "s010",
+      "scene_title": "Near the River",
+      "character": "marcus",
+      "start_seconds": 1967,
+      "end_seconds": 2016,
+      "duration_seconds": 49,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s010",
+      "scene_music_title": "Near the River",
+      "scene_music_path": "assets/scene_music/s010/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0059",
+      "scene_id": "s011",
+      "scene_title": "The man behind me is breathing on the back",
+      "character": "marcus",
+      "start_seconds": 2016,
+      "end_seconds": 2069,
+      "duration_seconds": 53,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s011",
+      "scene_music_title": "The man behind me is breathing on the back",
+      "scene_music_path": "assets/scene_music/s011/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0060",
+      "scene_id": "s011",
+      "scene_title": "The man behind me is breathing on the back",
+      "character": "marcus",
+      "start_seconds": 2069,
+      "end_seconds": 2107,
+      "duration_seconds": 38,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s011",
+      "scene_music_title": "The man behind me is breathing on the back",
+      "scene_music_path": "assets/scene_music/s011/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0061",
+      "scene_id": "s011",
+      "scene_title": "The man behind me is breathing on the back",
+      "character": "marcus",
+      "start_seconds": 2107,
+      "end_seconds": 2159,
+      "duration_seconds": 52,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s011",
+      "scene_music_title": "The man behind me is breathing on the back",
+      "scene_music_path": "assets/scene_music/s011/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0062",
+      "scene_id": "s011",
+      "scene_title": "The man behind me is breathing on the back",
+      "character": "marcus",
+      "start_seconds": 2159,
+      "end_seconds": 2198,
+      "duration_seconds": 39,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s011",
+      "scene_music_title": "The man behind me is breathing on the back",
+      "scene_music_path": "assets/scene_music/s011/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0063",
+      "scene_id": "s011",
+      "scene_title": "The man behind me is breathing on the back",
+      "character": "marcus",
+      "start_seconds": 2198,
+      "end_seconds": 2230,
+      "duration_seconds": 32,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s011",
+      "scene_music_title": "The man behind me is breathing on the back",
+      "scene_music_path": "assets/scene_music/s011/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0064",
+      "scene_id": "s011",
+      "scene_title": "The man behind me is breathing on the back",
+      "character": "marcus",
+      "start_seconds": 2230,
+      "end_seconds": 2269,
+      "duration_seconds": 39,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s011",
+      "scene_music_title": "The man behind me is breathing on the back",
+      "scene_music_path": "assets/scene_music/s011/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0065",
+      "scene_id": "s012",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2269,
+      "end_seconds": 2299,
+      "duration_seconds": 30,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s012",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s012/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0066",
+      "scene_id": "s012",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2299,
+      "end_seconds": 2345,
+      "duration_seconds": 46,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s012",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s012/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0067",
+      "scene_id": "s012",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2345,
+      "end_seconds": 2394,
+      "duration_seconds": 49,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s012",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s012/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0068",
+      "scene_id": "s012",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2394,
+      "end_seconds": 2417,
+      "duration_seconds": 23,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s012",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s012/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0069",
+      "scene_id": "s012",
+      "scene_title": "Battlefield",
+      "character": "titus",
+      "start_seconds": 2417,
+      "end_seconds": 2423,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s012",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s012/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0070",
+      "scene_id": "s012",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2423,
+      "end_seconds": 2432,
+      "duration_seconds": 9,
+      "voice_path": "",
+      "visual_slot_id": "VIS002",
+      "visual_title": "Inside the Tent",
+      "visual_path": "assets/visual_slots/VIS002/approved.txt",
+      "scene_music_id": "s012",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s012/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0071",
+      "scene_id": "s013",
+      "scene_title": "Battlefield",
+      "character": "titus",
+      "start_seconds": 2432,
+      "end_seconds": 2454,
+      "duration_seconds": 22,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s013",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s013/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0072",
+      "scene_id": "s013",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2454,
+      "end_seconds": 2460,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s013",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s013/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0073",
+      "scene_id": "s013",
+      "scene_title": "Battlefield",
+      "character": "titus",
+      "start_seconds": 2460,
+      "end_seconds": 2466,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s013",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s013/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0074",
+      "scene_id": "s013",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2466,
+      "end_seconds": 2511,
+      "duration_seconds": 45,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s013",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s013/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0075",
+      "scene_id": "s013",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2511,
+      "end_seconds": 2542,
+      "duration_seconds": 31,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s013",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s013/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0076",
+      "scene_id": "s013",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2542,
+      "end_seconds": 2600,
+      "duration_seconds": 58,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s013",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s013/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0077",
+      "scene_id": "s014",
+      "scene_title": "That was all.",
+      "character": "marcus",
+      "start_seconds": 2600,
+      "end_seconds": 2645,
+      "duration_seconds": 45,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s014",
+      "scene_music_title": "That was all.",
+      "scene_music_path": "assets/scene_music/s014/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0078",
+      "scene_id": "s014",
+      "scene_title": "That was all.",
+      "character": "marcus",
+      "start_seconds": 2645,
+      "end_seconds": 2670,
+      "duration_seconds": 25,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s014",
+      "scene_music_title": "That was all.",
+      "scene_music_path": "assets/scene_music/s014/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0079",
+      "scene_id": "s014",
+      "scene_title": "That was all.",
+      "character": "publius",
+      "start_seconds": 2670,
+      "end_seconds": 2676,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s014",
+      "scene_music_title": "That was all.",
+      "scene_music_path": "assets/scene_music/s014/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0080",
+      "scene_id": "s014",
+      "scene_title": "That was all.",
+      "character": "marcus",
+      "start_seconds": 2676,
+      "end_seconds": 2682,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s014",
+      "scene_music_title": "That was all.",
+      "scene_music_path": "assets/scene_music/s014/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0081",
+      "scene_id": "s014",
+      "scene_title": "That was all.",
+      "character": "publius",
+      "start_seconds": 2682,
+      "end_seconds": 2688,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s014",
+      "scene_music_title": "That was all.",
+      "scene_music_path": "assets/scene_music/s014/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0082",
+      "scene_id": "s014",
+      "scene_title": "That was all.",
+      "character": "gaius",
+      "start_seconds": 2688,
+      "end_seconds": 2694,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s014",
+      "scene_music_title": "That was all.",
+      "scene_music_path": "assets/scene_music/s014/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0083",
+      "scene_id": "s015",
+      "scene_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "character": "publius",
+      "start_seconds": 2694,
+      "end_seconds": 2700,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s015",
+      "scene_music_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "scene_music_path": "assets/scene_music/s015/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0084",
+      "scene_id": "s015",
+      "scene_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "character": "gaius",
+      "start_seconds": 2700,
+      "end_seconds": 2721,
+      "duration_seconds": 21,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s015",
+      "scene_music_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "scene_music_path": "assets/scene_music/s015/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0085",
+      "scene_id": "s015",
+      "scene_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "character": "marcus",
+      "start_seconds": 2721,
+      "end_seconds": 2751,
+      "duration_seconds": 30,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s015",
+      "scene_music_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "scene_music_path": "assets/scene_music/s015/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0086",
+      "scene_id": "s015",
+      "scene_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "character": "titus",
+      "start_seconds": 2751,
+      "end_seconds": 2757,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s015",
+      "scene_music_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "scene_music_path": "assets/scene_music/s015/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0087",
+      "scene_id": "s015",
+      "scene_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "character": "marcus",
+      "start_seconds": 2757,
+      "end_seconds": 2763,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s015",
+      "scene_music_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "scene_music_path": "assets/scene_music/s015/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0088",
+      "scene_id": "s015",
+      "scene_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "character": "titus",
+      "start_seconds": 2763,
+      "end_seconds": 2769,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s015",
+      "scene_music_title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "scene_music_path": "assets/scene_music/s015/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0089",
+      "scene_id": "s016",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 2769,
+      "end_seconds": 2775,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s016",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s016/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0090",
+      "scene_id": "s016",
+      "scene_title": "Inside the Tent",
+      "character": "titus",
+      "start_seconds": 2775,
+      "end_seconds": 2791,
+      "duration_seconds": 16,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s016",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s016/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0091",
+      "scene_id": "s016",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 2791,
+      "end_seconds": 2824,
+      "duration_seconds": 33,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s016",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s016/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0092",
+      "scene_id": "s016",
+      "scene_title": "Inside the Tent",
+      "character": "titus",
+      "start_seconds": 2824,
+      "end_seconds": 2830,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s016",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s016/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0093",
+      "scene_id": "s016",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 2830,
+      "end_seconds": 2836,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s016",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s016/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0094",
+      "scene_id": "s016",
+      "scene_title": "Inside the Tent",
+      "character": "titus",
+      "start_seconds": 2836,
+      "end_seconds": 2842,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s016",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s016/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0095",
+      "scene_id": "s017",
+      "scene_title": "By the Fire",
+      "character": "marcus",
+      "start_seconds": 2842,
+      "end_seconds": 2848,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s017",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s017/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0096",
+      "scene_id": "s017",
+      "scene_title": "By the Fire",
+      "character": "titus",
+      "start_seconds": 2848,
+      "end_seconds": 2854,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s017",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s017/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0097",
+      "scene_id": "s017",
+      "scene_title": "By the Fire",
+      "character": "marcus",
+      "start_seconds": 2854,
+      "end_seconds": 2866,
+      "duration_seconds": 12,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s017",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s017/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0098",
+      "scene_id": "s017",
+      "scene_title": "By the Fire",
+      "character": "titus",
+      "start_seconds": 2866,
+      "end_seconds": 2872,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s017",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s017/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0099",
+      "scene_id": "s017",
+      "scene_title": "By the Fire",
+      "character": "marcus",
+      "start_seconds": 2872,
+      "end_seconds": 2885,
+      "duration_seconds": 13,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s017",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s017/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0100",
+      "scene_id": "s017",
+      "scene_title": "By the Fire",
+      "character": "titus",
+      "start_seconds": 2885,
+      "end_seconds": 2891,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s017",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s017/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0101",
+      "scene_id": "s018",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2891,
+      "end_seconds": 2897,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s018",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s018/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0102",
+      "scene_id": "s018",
+      "scene_title": "Battlefield",
+      "character": "titus",
+      "start_seconds": 2897,
+      "end_seconds": 2926,
+      "duration_seconds": 29,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s018",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s018/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0103",
+      "scene_id": "s018",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2926,
+      "end_seconds": 2985,
+      "duration_seconds": 59,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s018",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s018/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0104",
+      "scene_id": "s018",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 2985,
+      "end_seconds": 3044,
+      "duration_seconds": 59,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s018",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s018/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0105",
+      "scene_id": "s018",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 3044,
+      "end_seconds": 3085,
+      "duration_seconds": 41,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s018",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s018/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0106",
+      "scene_id": "s018",
+      "scene_title": "Battlefield",
+      "character": "marcus",
+      "start_seconds": 3085,
+      "end_seconds": 3143,
+      "duration_seconds": 58,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s018",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s018/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0107",
+      "scene_id": "s019",
+      "scene_title": "On the Road",
+      "character": "marcus",
+      "start_seconds": 3143,
+      "end_seconds": 3155,
+      "duration_seconds": 12,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s019",
+      "scene_music_title": "On the Road",
+      "scene_music_path": "assets/scene_music/s019/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0108",
+      "scene_id": "s019",
+      "scene_title": "On the Road",
+      "character": "quintus",
+      "start_seconds": 3155,
+      "end_seconds": 3161,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s019",
+      "scene_music_title": "On the Road",
+      "scene_music_path": "assets/scene_music/s019/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0109",
+      "scene_id": "s019",
+      "scene_title": "On the Road",
+      "character": "marcus",
+      "start_seconds": 3161,
+      "end_seconds": 3167,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s019",
+      "scene_music_title": "On the Road",
+      "scene_music_path": "assets/scene_music/s019/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0110",
+      "scene_id": "s019",
+      "scene_title": "On the Road",
+      "character": "quintus",
+      "start_seconds": 3167,
+      "end_seconds": 3173,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s019",
+      "scene_music_title": "On the Road",
+      "scene_music_path": "assets/scene_music/s019/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0111",
+      "scene_id": "s019",
+      "scene_title": "On the Road",
+      "character": "marcus",
+      "start_seconds": 3173,
+      "end_seconds": 3214,
+      "duration_seconds": 41,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s019",
+      "scene_music_title": "On the Road",
+      "scene_music_path": "assets/scene_music/s019/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0112",
+      "scene_id": "s019",
+      "scene_title": "On the Road",
+      "character": "publius",
+      "start_seconds": 3214,
+      "end_seconds": 3220,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s019",
+      "scene_music_title": "On the Road",
+      "scene_music_path": "assets/scene_music/s019/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0113",
+      "scene_id": "s020",
+      "scene_title": "By the Fire",
+      "character": "marcus",
+      "start_seconds": 3220,
+      "end_seconds": 3238,
+      "duration_seconds": 18,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s020",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s020/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0114",
+      "scene_id": "s020",
+      "scene_title": "By the Fire",
+      "character": "publius",
+      "start_seconds": 3238,
+      "end_seconds": 3244,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s020",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s020/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0115",
+      "scene_id": "s020",
+      "scene_title": "By the Fire",
+      "character": "marcus",
+      "start_seconds": 3244,
+      "end_seconds": 3281,
+      "duration_seconds": 37,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s020",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s020/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0116",
+      "scene_id": "s020",
+      "scene_title": "By the Fire",
+      "character": "titus",
+      "start_seconds": 3281,
+      "end_seconds": 3289,
+      "duration_seconds": 8,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s020",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s020/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0117",
+      "scene_id": "s020",
+      "scene_title": "By the Fire",
+      "character": "marcus",
+      "start_seconds": 3289,
+      "end_seconds": 3295,
+      "duration_seconds": 6,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s020",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s020/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0118",
+      "scene_id": "s020",
+      "scene_title": "By the Fire",
+      "character": "marcus",
+      "start_seconds": 3295,
+      "end_seconds": 3337,
+      "duration_seconds": 42,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s020",
+      "scene_music_title": "By the Fire",
+      "scene_music_path": "assets/scene_music/s020/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0119",
+      "scene_id": "s021",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 3337,
+      "end_seconds": 3389,
+      "duration_seconds": 52,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s021",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s021/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0120",
+      "scene_id": "s021",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 3389,
+      "end_seconds": 3402,
+      "duration_seconds": 13,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s021",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s021/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0121",
+      "scene_id": "s021",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 3402,
+      "end_seconds": 3460,
+      "duration_seconds": 58,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s021",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s021/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0122",
+      "scene_id": "s021",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 3460,
+      "end_seconds": 3508,
+      "duration_seconds": 48,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s021",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s021/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0123",
+      "scene_id": "s021",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 3508,
+      "end_seconds": 3558,
+      "duration_seconds": 50,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s021",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s021/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0124",
+      "scene_id": "s021",
+      "scene_title": "Inside the Tent",
+      "character": "marcus",
+      "start_seconds": 3558,
+      "end_seconds": 3597,
+      "duration_seconds": 39,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s021",
+      "scene_music_title": "Inside the Tent",
+      "scene_music_path": "assets/scene_music/s021/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    },
+    {
+      "block_id": "b0125",
+      "scene_id": "s022",
+      "scene_title": "Battlefield",
+      "character": "narrator",
+      "start_seconds": 3597,
+      "end_seconds": 3621,
+      "duration_seconds": 24,
+      "voice_path": "",
+      "visual_slot_id": "VIS003",
+      "visual_title": "Battlefield",
+      "visual_path": "assets/visual_slots/VIS003/approved.txt",
+      "scene_music_id": "s022",
+      "scene_music_title": "Battlefield",
+      "scene_music_path": "assets/scene_music/s022/approved.txt",
+      "ready": false,
+      "missing": [
+        "voice"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s001",
+      "title": "Before Dawn",
+      "start_seconds": 0,
+      "end_seconds": 248,
+      "duration_seconds": 248,
+      "block_ids": [
+        "b0001",
+        "b0002",
+        "b0003",
+        "b0004",
+        "b0005"
+      ],
+      "ready_blocks": 1,
+      "total_blocks": 5
+    },
+    {
+      "scene_id": "s002",
+      "title": "Near the River",
+      "start_seconds": 248,
+      "end_seconds": 544,
+      "duration_seconds": 296,
+      "block_ids": [
+        "b0006",
+        "b0007",
+        "b0008",
+        "b0009",
+        "b0010",
+        "b0011"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s003",
+      "title": "Before Dawn",
+      "start_seconds": 544,
+      "end_seconds": 683,
+      "duration_seconds": 139,
+      "block_ids": [
+        "b0012",
+        "b0013",
+        "b0014",
+        "b0015",
+        "b0016",
+        "b0017"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s004",
+      "title": "Inside the Tent",
+      "start_seconds": 683,
+      "end_seconds": 876,
+      "duration_seconds": 193,
+      "block_ids": [
+        "b0018",
+        "b0019",
+        "b0020",
+        "b0021",
+        "b0022",
+        "b0023"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s005",
+      "title": "By the Fire",
+      "start_seconds": 876,
+      "end_seconds": 928,
+      "duration_seconds": 52,
+      "block_ids": [
+        "b0024",
+        "b0025",
+        "b0026",
+        "b0027",
+        "b0028",
+        "b0029"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s006",
+      "title": "Inside the Tent",
+      "start_seconds": 928,
+      "end_seconds": 1067,
+      "duration_seconds": 139,
+      "block_ids": [
+        "b0030",
+        "b0031",
+        "b0032",
+        "b0033",
+        "b0034",
+        "b0035"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s007",
+      "title": "Inside the Tent",
+      "start_seconds": 1067,
+      "end_seconds": 1222,
+      "duration_seconds": 155,
+      "block_ids": [
+        "b0036",
+        "b0037",
+        "b0038",
+        "b0039",
+        "b0040",
+        "b0041"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s008",
+      "title": "Before Dawn",
+      "start_seconds": 1222,
+      "end_seconds": 1463,
+      "duration_seconds": 241,
+      "block_ids": [
+        "b0042",
+        "b0043",
+        "b0044",
+        "b0045",
+        "b0046"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 5
+    },
+    {
+      "scene_id": "s009",
+      "title": "Inside the Tent",
+      "start_seconds": 1463,
+      "end_seconds": 1742,
+      "duration_seconds": 279,
+      "block_ids": [
+        "b0047",
+        "b0048",
+        "b0049",
+        "b0050",
+        "b0051",
+        "b0052"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s010",
+      "title": "Near the River",
+      "start_seconds": 1742,
+      "end_seconds": 2016,
+      "duration_seconds": 274,
+      "block_ids": [
+        "b0053",
+        "b0054",
+        "b0055",
+        "b0056",
+        "b0057",
+        "b0058"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s011",
+      "title": "The man behind me is breathing on the back",
+      "start_seconds": 2016,
+      "end_seconds": 2269,
+      "duration_seconds": 253,
+      "block_ids": [
+        "b0059",
+        "b0060",
+        "b0061",
+        "b0062",
+        "b0063",
+        "b0064"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s012",
+      "title": "Battlefield",
+      "start_seconds": 2269,
+      "end_seconds": 2432,
+      "duration_seconds": 163,
+      "block_ids": [
+        "b0065",
+        "b0066",
+        "b0067",
+        "b0068",
+        "b0069",
+        "b0070"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s013",
+      "title": "Battlefield",
+      "start_seconds": 2432,
+      "end_seconds": 2600,
+      "duration_seconds": 168,
+      "block_ids": [
+        "b0071",
+        "b0072",
+        "b0073",
+        "b0074",
+        "b0075",
+        "b0076"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s014",
+      "title": "That was all.",
+      "start_seconds": 2600,
+      "end_seconds": 2694,
+      "duration_seconds": 94,
+      "block_ids": [
+        "b0077",
+        "b0078",
+        "b0079",
+        "b0080",
+        "b0081",
+        "b0082"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s015",
+      "title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "start_seconds": 2694,
+      "end_seconds": 2769,
+      "duration_seconds": 75,
+      "block_ids": [
+        "b0083",
+        "b0084",
+        "b0085",
+        "b0086",
+        "b0087",
+        "b0088"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s016",
+      "title": "Inside the Tent",
+      "start_seconds": 2769,
+      "end_seconds": 2842,
+      "duration_seconds": 73,
+      "block_ids": [
+        "b0089",
+        "b0090",
+        "b0091",
+        "b0092",
+        "b0093",
+        "b0094"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s017",
+      "title": "By the Fire",
+      "start_seconds": 2842,
+      "end_seconds": 2891,
+      "duration_seconds": 49,
+      "block_ids": [
+        "b0095",
+        "b0096",
+        "b0097",
+        "b0098",
+        "b0099",
+        "b0100"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s018",
+      "title": "Battlefield",
+      "start_seconds": 2891,
+      "end_seconds": 3143,
+      "duration_seconds": 252,
+      "block_ids": [
+        "b0101",
+        "b0102",
+        "b0103",
+        "b0104",
+        "b0105",
+        "b0106"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s019",
+      "title": "On the Road",
+      "start_seconds": 3143,
+      "end_seconds": 3220,
+      "duration_seconds": 77,
+      "block_ids": [
+        "b0107",
+        "b0108",
+        "b0109",
+        "b0110",
+        "b0111",
+        "b0112"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s020",
+      "title": "By the Fire",
+      "start_seconds": 3220,
+      "end_seconds": 3337,
+      "duration_seconds": 117,
+      "block_ids": [
+        "b0113",
+        "b0114",
+        "b0115",
+        "b0116",
+        "b0117",
+        "b0118"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s021",
+      "title": "Inside the Tent",
+      "start_seconds": 3337,
+      "end_seconds": 3597,
+      "duration_seconds": 260,
+      "block_ids": [
+        "b0119",
+        "b0120",
+        "b0121",
+        "b0122",
+        "b0123",
+        "b0124"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 6
+    },
+    {
+      "scene_id": "s022",
+      "title": "Battlefield",
+      "start_seconds": 3597,
+      "end_seconds": 3621,
+      "duration_seconds": 24,
+      "block_ids": [
+        "b0125"
+      ],
+      "ready_blocks": 0,
+      "total_blocks": 1
+    }
+  ],
+  "ready_blocks": 1,
+  "total_blocks": 125
+}

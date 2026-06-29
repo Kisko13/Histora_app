@@ -1,0 +1,16 @@
+{
+  "scene_id": "s017",
+  "title": "By the Fire",
+  "status": "approved",
+  "duration_seconds": 49,
+  "block_ids": [
+    "b0095",
+    "b0096",
+    "b0097",
+    "b0098",
+    "b0099",
+    "b0100"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. By the Fire: campfire memory, quiet crackle, warm but uneasy drone. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s017/approved.txt"
+}

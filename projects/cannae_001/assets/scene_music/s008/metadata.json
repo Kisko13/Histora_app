@@ -1,0 +1,15 @@
+{
+  "scene_id": "s008",
+  "title": "Before Dawn",
+  "status": "approved",
+  "duration_seconds": 241,
+  "block_ids": [
+    "b0042",
+    "b0043",
+    "b0044",
+    "b0045",
+    "b0046"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. Before Dawn: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s008/approved.txt"
+}

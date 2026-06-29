@@ -1,0 +1,12 @@
+MOCK VISUAL SLOT PLACEHOLDER — FREE/LOCAL
+
+SLOT: VIS002
+TITLE: Inside the Tent
+COVERS: b0042 -> b0070
+DURATION: 1210 sec
+
+PROMPT:
+cinematic historical POV still, listening-first YouTube documentary, visual slot 2, scenes: Before Dawn, Inside the Tent, Near the River, characters: marcus, titus, locations/objects: tent, road, camp, plain, hill, river, helmet, standard, Roman Republic, Battle of Cannae context, grounded realism, natural light, human eye-level perspective, slow zoom friendly composition, no modern objects, no fantasy, story moment: first-person immersive historical POV still, Roman Republic, character focus: Marcus, location: tent, equipment/objects: period-correct clothing and props, emotion: dread, cinematic realism, natural light, human-scale composition, no fantasy, no modern objects, moment: I lie down and stare at the tent ceiling in the dark and hold his words in my head and think about my own mother, and her hand on my face in the dark, and the thing I never said. Some things don't need saying. I fall asleep still thinking i, cinematic historical realism, immersive first-person POV, grounded sensory detail, eye-level human perspective, documentary still, no poster posing, natural practical light based on script
+
+NEGATIVE:
+modern objects, fantasy armor, video game style, text, watermark, poster pose

@@ -1,0 +1,16 @@
+{
+  "scene_id": "s002",
+  "title": "Near the River",
+  "status": "approved",
+  "duration_seconds": 296,
+  "block_ids": [
+    "b0006",
+    "b0007",
+    "b0008",
+    "b0009",
+    "b0010",
+    "b0011"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. Near the River: river approach, slow ominous movement, wind and water bed. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s002/approved.txt"
+}

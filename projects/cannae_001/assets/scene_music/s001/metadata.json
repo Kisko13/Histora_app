@@ -1,0 +1,15 @@
+{
+  "scene_id": "s001",
+  "title": "Before Dawn",
+  "status": "approved",
+  "duration_seconds": 248,
+  "block_ids": [
+    "b0001",
+    "b0002",
+    "b0003",
+    "b0004",
+    "b0005"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. Before Dawn: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s001/approved.txt"
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v31_health",
+  "project": "C:\\Users\\Ivana\\Documents\\GitHub\\Histora_app\\projects\\cannae_001",
+  "blocks": {
+    "total": 125
+  },
+  "voice": {
+    "done": 1,
+    "total": 125,
+    "percent": 0.8
+  },
+  "visual_slots": {
+    "done": 3,
+    "total": 3,
+    "percent": 100.0
+  },
+  "scene_music": {
+    "done": 22,
+    "total": 22,
+    "percent": 100.0
+  },
+  "timeline": {
+    "exists": true,
+    "total_blocks": 125,
+    "ready_blocks": 1,
+    "runtime_minutes": 60.35
+  },
+  "preview": {
+    "html": true
+  },
+  "assembly": {
+    "block_manifests": 0,
+    "scene_manifests": 0,
+    "full_block_coverage": false
+  },
+  "package": {
+    "v31_package_manifest": false
+  },
+  "next_recommendation": {
+    "task": "voices",
+    "message": "Generate/review voices: 1/125 ready."
+  }
+}

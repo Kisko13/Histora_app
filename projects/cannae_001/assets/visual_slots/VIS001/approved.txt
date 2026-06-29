@@ -1,0 +1,12 @@
+MOCK VISUAL SLOT PLACEHOLDER — FREE/LOCAL
+
+SLOT: VIS001
+TITLE: Before Dawn
+COVERS: b0001 -> b0041
+DURATION: 1222 sec
+
+PROMPT:
+cinematic historical POV still, listening-first YouTube documentary, visual slot 1, scenes: Before Dawn, Near the River, Inside the Tent, characters: marcus, gaius, quintus, decimus, locations/objects: plain, road, camp, tent, river, fire, hill, city, Roman Republic, Battle of Cannae context, grounded realism, natural light, human eye-level perspective, slow zoom friendly composition, no modern objects, no fantasy, story moment: first-person immersive historical POV still, Roman Republic, character focus: Marcus, location: plain, equipment/objects: period-correct clothing and props, emotion: battle tension, cinematic realism, natural light, human-scale composition, no fantasy, no modern objects, moment: The flies always found us before dawn. Long before Hannibal. Long before the screaming. Long before Rome lost more sons than anyone believed possible in a single afternoon on a flat and unremarkable plain in the south of Italy. The flies al, cinematic historical realism, immersive first-person POV, grounded sensory detail, eye-level human perspective, documentary still, no poster posing, natural practical light based
+
+NEGATIVE:
+modern objects, fantasy armor, video game style, text, watermark, poster pose

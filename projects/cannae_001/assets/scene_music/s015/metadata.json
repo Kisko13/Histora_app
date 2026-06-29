@@ -1,0 +1,16 @@
+{
+  "scene_id": "s015",
+  "title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+  "status": "approved",
+  "duration_seconds": 75,
+  "block_ids": [
+    "b0083",
+    "b0084",
+    "b0085",
+    "b0086",
+    "b0087",
+    "b0088"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. \"I ran.\" \"Listen.\" Gaius says it the way he: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s015/approved.txt"
+}

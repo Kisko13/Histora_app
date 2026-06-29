@@ -1,0 +1,16 @@
+{
+  "scene_id": "s019",
+  "title": "On the Road",
+  "status": "approved",
+  "duration_seconds": 77,
+  "block_ids": [
+    "b0107",
+    "b0108",
+    "b0109",
+    "b0110",
+    "b0111",
+    "b0112"
+  ],
+  "cue": "SCENE MUSIC ONLY, not per block. On the Road: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+  "asset_path": "assets/scene_music/s019/approved.txt"
+}

@@ -1,0 +1,353 @@
+{
+  "version": "v28_scene_music",
+  "strategy": "scene_based_music_not_per_block",
+  "scene_count": 22,
+  "scenes": [
+    {
+      "id": "s001",
+      "title": "Before Dawn",
+      "block_ids": [
+        "b0001",
+        "b0002",
+        "b0003",
+        "b0004",
+        "b0005"
+      ],
+      "duration_seconds": 248,
+      "cue": "SCENE MUSIC ONLY, not per block. Before Dawn: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s001/approved.txt"
+    },
+    {
+      "id": "s002",
+      "title": "Near the River",
+      "block_ids": [
+        "b0006",
+        "b0007",
+        "b0008",
+        "b0009",
+        "b0010",
+        "b0011"
+      ],
+      "duration_seconds": 296,
+      "cue": "SCENE MUSIC ONLY, not per block. Near the River: river approach, slow ominous movement, wind and water bed. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s002/approved.txt"
+    },
+    {
+      "id": "s003",
+      "title": "Before Dawn",
+      "block_ids": [
+        "b0012",
+        "b0013",
+        "b0014",
+        "b0015",
+        "b0016",
+        "b0017"
+      ],
+      "duration_seconds": 139,
+      "cue": "SCENE MUSIC ONLY, not per block. Before Dawn: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s003/approved.txt"
+    },
+    {
+      "id": "s004",
+      "title": "Inside the Tent",
+      "block_ids": [
+        "b0018",
+        "b0019",
+        "b0020",
+        "b0021",
+        "b0022",
+        "b0023"
+      ],
+      "duration_seconds": 193,
+      "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s004/approved.txt"
+    },
+    {
+      "id": "s005",
+      "title": "By the Fire",
+      "block_ids": [
+        "b0024",
+        "b0025",
+        "b0026",
+        "b0027",
+        "b0028",
+        "b0029"
+      ],
+      "duration_seconds": 52,
+      "cue": "SCENE MUSIC ONLY, not per block. By the Fire: campfire memory, quiet crackle, warm but uneasy drone. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s005/approved.txt"
+    },
+    {
+      "id": "s006",
+      "title": "Inside the Tent",
+      "block_ids": [
+        "b0030",
+        "b0031",
+        "b0032",
+        "b0033",
+        "b0034",
+        "b0035"
+      ],
+      "duration_seconds": 139,
+      "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s006/approved.txt"
+    },
+    {
+      "id": "s007",
+      "title": "Inside the Tent",
+      "block_ids": [
+        "b0036",
+        "b0037",
+        "b0038",
+        "b0039",
+        "b0040",
+        "b0041"
+      ],
+      "duration_seconds": 155,
+      "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s007/approved.txt"
+    },
+    {
+      "id": "s008",
+      "title": "Before Dawn",
+      "block_ids": [
+        "b0042",
+        "b0043",
+        "b0044",
+        "b0045",
+        "b0046"
+      ],
+      "duration_seconds": 241,
+      "cue": "SCENE MUSIC ONLY, not per block. Before Dawn: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s008/approved.txt"
+    },
+    {
+      "id": "s009",
+      "title": "Inside the Tent",
+      "block_ids": [
+        "b0047",
+        "b0048",
+        "b0049",
+        "b0050",
+        "b0051",
+        "b0052"
+      ],
+      "duration_seconds": 279,
+      "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s009/approved.txt"
+    },
+    {
+      "id": "s010",
+      "title": "Near the River",
+      "block_ids": [
+        "b0053",
+        "b0054",
+        "b0055",
+        "b0056",
+        "b0057",
+        "b0058"
+      ],
+      "duration_seconds": 274,
+      "cue": "SCENE MUSIC ONLY, not per block. Near the River: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s010/approved.txt"
+    },
+    {
+      "id": "s011",
+      "title": "The man behind me is breathing on the back",
+      "block_ids": [
+        "b0059",
+        "b0060",
+        "b0061",
+        "b0062",
+        "b0063",
+        "b0064"
+      ],
+      "duration_seconds": 253,
+      "cue": "SCENE MUSIC ONLY, not per block. The man behind me is breathing on the back: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s011/approved.txt"
+    },
+    {
+      "id": "s012",
+      "title": "Battlefield",
+      "block_ids": [
+        "b0065",
+        "b0066",
+        "b0067",
+        "b0068",
+        "b0069",
+        "b0070"
+      ],
+      "duration_seconds": 163,
+      "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s012/approved.txt"
+    },
+    {
+      "id": "s013",
+      "title": "Battlefield",
+      "block_ids": [
+        "b0071",
+        "b0072",
+        "b0073",
+        "b0074",
+        "b0075",
+        "b0076"
+      ],
+      "duration_seconds": 168,
+      "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s013/approved.txt"
+    },
+    {
+      "id": "s014",
+      "title": "That was all.",
+      "block_ids": [
+        "b0077",
+        "b0078",
+        "b0079",
+        "b0080",
+        "b0081",
+        "b0082"
+      ],
+      "duration_seconds": 94,
+      "cue": "SCENE MUSIC ONLY, not per block. That was all.: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s014/approved.txt"
+    },
+    {
+      "id": "s015",
+      "title": "\"I ran.\" \"Listen.\" Gaius says it the way he",
+      "block_ids": [
+        "b0083",
+        "b0084",
+        "b0085",
+        "b0086",
+        "b0087",
+        "b0088"
+      ],
+      "duration_seconds": 75,
+      "cue": "SCENE MUSIC ONLY, not per block. \"I ran.\" \"Listen.\" Gaius says it the way he: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s015/approved.txt"
+    },
+    {
+      "id": "s016",
+      "title": "Inside the Tent",
+      "block_ids": [
+        "b0089",
+        "b0090",
+        "b0091",
+        "b0092",
+        "b0093",
+        "b0094"
+      ],
+      "duration_seconds": 73,
+      "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s016/approved.txt"
+    },
+    {
+      "id": "s017",
+      "title": "By the Fire",
+      "block_ids": [
+        "b0095",
+        "b0096",
+        "b0097",
+        "b0098",
+        "b0099",
+        "b0100"
+      ],
+      "duration_seconds": 49,
+      "cue": "SCENE MUSIC ONLY, not per block. By the Fire: campfire memory, quiet crackle, warm but uneasy drone. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s017/approved.txt"
+    },
+    {
+      "id": "s018",
+      "title": "Battlefield",
+      "block_ids": [
+        "b0101",
+        "b0102",
+        "b0103",
+        "b0104",
+        "b0105",
+        "b0106"
+      ],
+      "duration_seconds": 252,
+      "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s018/approved.txt"
+    },
+    {
+      "id": "s019",
+      "title": "On the Road",
+      "block_ids": [
+        "b0107",
+        "b0108",
+        "b0109",
+        "b0110",
+        "b0111",
+        "b0112"
+      ],
+      "duration_seconds": 77,
+      "cue": "SCENE MUSIC ONLY, not per block. On the Road: subtle historical ambience under narration. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s019/approved.txt"
+    },
+    {
+      "id": "s020",
+      "title": "By the Fire",
+      "block_ids": [
+        "b0113",
+        "b0114",
+        "b0115",
+        "b0116",
+        "b0117",
+        "b0118"
+      ],
+      "duration_seconds": 117,
+      "cue": "SCENE MUSIC ONLY, not per block. By the Fire: quiet dawn tension, sparse drones, slow pulse. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s020/approved.txt"
+    },
+    {
+      "id": "s021",
+      "title": "Inside the Tent",
+      "block_ids": [
+        "b0119",
+        "b0120",
+        "b0121",
+        "b0122",
+        "b0123",
+        "b0124"
+      ],
+      "duration_seconds": 260,
+      "cue": "SCENE MUSIC ONLY, not per block. Inside the Tent: claustrophobic tent ambience, low strings, muted unease. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s021/approved.txt"
+    },
+    {
+      "id": "s022",
+      "title": "Battlefield",
+      "block_ids": [
+        "b0125"
+      ],
+      "duration_seconds": 24,
+      "cue": "SCENE MUSIC ONLY, not per block. Battlefield: low battle tension, restrained percussion, distant dread. Keep low under narration, loopable, no vocals.",
+      "status": "approved",
+      "asset_path": "assets/scene_music/s022/approved.txt"
+    }
+  ],
+  "generated_count": 22
+}
